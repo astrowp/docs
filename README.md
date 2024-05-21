@@ -26,11 +26,17 @@ How about editing the content of your new Docsify site on GitHub Pages? View the
 ### Viewing Locally 
 Run 
 
-```npx serve .```
+```
+npx serve .
+```
 
 (Node.js users) or 
 
-```python -m http.server 8000```
+````
+```
+python -m http.server 8000
+```
+````
 
 (Python users) in the repo folder to serve run locally.
 
