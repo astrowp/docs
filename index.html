@@ -20,6 +20,18 @@
   margin: 0;
   overflow-x: hidden;
 }
+  .sidebar-toggle {
+    display: none;
+  }
+  .content {
+    padding-top: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 180px;
+    transition: left .25s ease;
+}
  .sidebar {
    color: #fff;
 }
@@ -39,8 +51,13 @@
    margin: 0 auto 1rem;
    font-size: 1.5rem;
    font-weight: 400;
-   text-align: center;
+   text-align: left;
+   padding-left: 15px;
 }
+ .sidebar>h1 a {
+    color: #ffdb58;
+    text-decoration: none;
+}  
   .nav-link {
   display: flex;
   align-items: center;
@@ -128,24 +145,17 @@
   <div id="app"></div>
 
   <script>
-    // Docsify Configuration (see https://docsify.js.org/#/configuration)
     window.$docsify = {
-      name: 'AstroWP Docs',
-
-      // Sidebar Configuration
-      auto2top: true,
-      loadSidebar: true,
-      maxLevel: 3,
-      // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
-      subMaxLevel: 3,
+    name: 'AstroWP Docs',
+    auto2top: true,
+    loadSidebar: true,
+    maxLevel: 3,
+    subMaxLevel: 3,
+    externalLinkRel: 'nofollow, noopener, noreferrer',
     };
   </script>
 
-  <!-- Required -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-
-  <!-- Recommended -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
-
+ <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
 </body>
 </html>
