@@ -21,13 +21,29 @@
   overflow-x: hidden;
 }
   .sidebar-toggle span {
-    background-color: #ffdb58;
-    background-color: var(--theme-color, #ffdb58);
+    background-color: #000;
+    background-color: var(--theme-color, #000);
     display: block;
     margin-bottom: 4px;
     width: 16px;
     height: 2px;
 }
+
+  .sidebar-toggle {
+    background-color: transparent;
+    background-color: #fff;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    transition: opacity .3s;
+    z-index: 30;
+    cursor: pointer;
+}
+  
   .content {
     padding-top: 60px;
     position: absolute;
@@ -39,7 +55,7 @@
 
   @media screen and (max-width: 768px) {
     body.close .sidebar-toggle {
-        background-color: hsla(0, 0%, 100%, .8);
+        background-color: #fff;
         transition: background-color 1s;
         padding: 10px;
     }
