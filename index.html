@@ -149,24 +149,12 @@
     font-size: 1em!important;
 }
 
-  /* Define CSS variables for light and dark modes */
-    :root {
-      --icon-color: #586069; /* Default color for light mode */
-      --icon-success-color: #28a745; /* Success color for light mode */
-    }
-
-    body.dark-mode {
-      --icon-color: #d1d5da; /* Default color for dark mode */
-      --icon-success-color: #34d058; /* Success color for dark mode */
-    }
-
-    /* Custom styles for the copy button */
-    .docsify-copy-code-button {
-      background: none;
+  .docsify-copy-code-button {
+      background: url('data:image/svg+xml,%3Csvg width="64px" height="64px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23000000" stroke-width="1.3679999999999999" stroke-linecap="round" stroke-linejoin="miter" transform="rotate(0)"%3E%3Cg id="SVGRepo_bgCarrier" stroke-width="0"%3E%3C/g%3E%3Cg id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="%23CCCCCC" stroke-width="0.384"%3E%3C/g%3E%3Cg id="SVGRepo_iconCarrier"%3E%3Crect x="2" y="2" width="14" height="14" rx="0" fill="%23d4cd0c" opacity="0.1" stroke-width="0"%3E%3C/rect%3E%3Crect x="2" y="2" width="14" height="14" rx="0"%3E%3C/rect%3E%3Cpolygon points="22 22 8 22 8 16 16 16 16 8 22 8 22 22"%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E') no-repeat center center;
+      background-size: contain;
       border: none;
-      color: var(--icon-color);
-      padding: 0;
-      margin: 2px;
+      color: transparent;
+      padding: 16px;
       position: absolute;
       right: 8px;
       top: 8px;
@@ -178,48 +166,8 @@
       transition: background-color 0.25s ease;
     }
 
-    .docsify-copy-code-button .octicon {
-      fill: var(--icon-color);
-    }
-
-    .docsify-copy-code-button .octicon-check {
-      display: none;
-      color: var(--icon-success-color);
-    }
-
-    .docsify-copy-code-button.success .octicon-check {
-      display: inline-block;
-    }
-
-    .docsify-copy-code-button.success .octicon-copy {
-      display: none;
-    }
-
-    .docsify-copy-code-button .label {
-      display: none;
-    }
-
     pre:hover .docsify-copy-code-button {
       opacity: 1;
-    }
-
-    /* Injecting the SVG icons directly into the button */
-    .docsify-copy-code-button:before {
-      content: '';
-      background-image: url('data:image/svg+xml;utf8,<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy"><path fill="var(--icon-color)" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path fill="var(--icon-color)" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg>');
-      background-repeat: no-repeat;
-      width: 16px;
-      height: 16px;
-      display: block;
-    }
-
-    .docsify-copy-code-button.success:before {
-      content: '';
-      background-image: url('data:image/svg+xml;utf8,<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check color-fg-success"><path fill="var(--icon-success-color)" d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>');
-      background-repeat: no-repeat;
-      width: 16px;
-      height: 16px;
-      display: block;
     }
 
   
