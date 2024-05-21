@@ -148,50 +148,6 @@
   .pagination-item-title {
     font-size: 1em!important;
 }
-
-  .docsify-copy-code-button {
-      background: url('data:image/svg+xml,%3Csvg width="64px" height="64px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23000000" stroke-width="1.3679999999999999" stroke-linecap="round" stroke-linejoin="miter" transform="rotate(0)"%3E%3Cg id="SVGRepo_bgCarrier" stroke-width="0"%3E%3C/g%3E%3Cg id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="%23CCCCCC" stroke-width="0.384"%3E%3C/g%3E%3Cg id="SVGRepo_iconCarrier"%3E%3Crect x="2" y="2" width="14" height="14" rx="0" fill="%23d4cd0c" opacity="0.1" stroke-width="0"%3E%3C/rect%3E%3Crect x="2" y="2" width="14" height="14" rx="0"%3E%3C/rect%3E%3Cpolygon points="22 22 8 22 8 16 16 16 16 8 22 8 22 22"%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E') no-repeat center center;
-      background-size: contain;
-      border: none;
-      color: transparent;
-      padding: 16px;
-      position: absolute;
-      right: 8px;
-      top: 8px;
-      z-index: 1;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 0.25s ease;
-    }
-
-    pre:hover .docsify-copy-code-button {
-      opacity: 1;
-    }
-.docsify-copy-code-button .octicon {
-      fill: currentColor;
-    }
-
-    .docsify-copy-code-button .octicon-check {
-      display: none;
-      color: #28a745;
-    }
-
-    .docsify-copy-code-button.success .octicon-check {
-      display: inline-block;
-    }
-
-    .docsify-copy-code-button.success .octicon-copy {
-      display: none;
-    }
-
-    .docsify-copy-code-button .label {
-      display: none;
-    }
-
-    pre:hover .docsify-copy-code-button {
-      opacity: 1;
   
 </style>
 </head>
@@ -232,6 +188,17 @@
     subMaxLevel: 3,
     externalLinkRel: 'nofollow, noopener, noreferrer',
     };
+  </script>
+
+  <script>
+    window.$docsify = {
+  // docsify-copy-code (defaults)
+  copyCode: {
+    buttonText: '<svg width="100px" height="100px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000" stroke-width="1.3679999999999999" stroke-linecap="round" stroke-linejoin="miter" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="0" fill="#ffffff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.384"></g><g id="SVGRepo_iconCarrier"><rect x="2" y="2" width="14" height="14" rx="0" fill="#d4cd0c" opacity="0.1" stroke-width="0"></rect><rect x="2" y="2" width="14" height="14" rx="0"></rect><polygon points="22 22 8 22 8 16 16 16 16 8 22 8 22 22"></polygon></g></svg>',
+    errorText: 'Error',
+    successText: 'Copied',
+  },
+};
   </script>
 
  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
