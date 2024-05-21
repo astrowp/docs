@@ -15,16 +15,32 @@
   text-decoration: none;
   color: inherit;
 }
-
 .nav-link .icon {
   display: flex;
   align-items: center;
   margin-right: 8px; /* Adjust the spacing between the icon and text as needed */
 }
-
 .nav-link .text {
   display: flex;
   align-items: center;
+}
+.markdown-section a {
+  color: #FFD700;
+  color: var(--theme-color, #FFD700);
+  font-weight: 600;
+}
+.sidebar ul li.active>a {
+ border-right: 2px solid;
+ color: #FFD700;
+ color: var(--theme-color, #FFD700);
+ font-weight: 600;
+}
+.markdown-section blockquote {
+ border-left: 4px solid #FFD700;
+ border-left: 4px solid var(--theme-color, #FFD700);
+ color: #858585;
+ margin: 2em 0;
+ padding-left: 20px;
 }
 </style>
 </head>
@@ -34,7 +50,7 @@
   <nav>
   <a href="https://astrowp.com" class="nav-link">
     <span class="icon">
-      <svg width="20px" height="20px" viewBox="0 0 24.000001 24.000001" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+      <svg width="24px" height="24px" viewBox="0 0 24.000001 24.000001" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
         <g id="SVGRepo_iconCarrier"> 
