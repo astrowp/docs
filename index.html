@@ -169,7 +169,29 @@
     pre:hover .docsify-copy-code-button {
       opacity: 1;
     }
+.docsify-copy-code-button .octicon {
+      fill: currentColor;
+    }
 
+    .docsify-copy-code-button .octicon-check {
+      display: none;
+      color: #28a745;
+    }
+
+    .docsify-copy-code-button.success .octicon-check {
+      display: inline-block;
+    }
+
+    .docsify-copy-code-button.success .octicon-copy {
+      display: none;
+    }
+
+    .docsify-copy-code-button .label {
+      display: none;
+    }
+
+    pre:hover .docsify-copy-code-button {
+      opacity: 1;
   
 </style>
 </head>
