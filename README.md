@@ -32,11 +32,9 @@ npx serve .
 
 (Node.js users) or 
 
-````
 ```
 python -m http.server 8000
 ```
-````
 
 (Python users) in the repo folder to serve run locally.
 
