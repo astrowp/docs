@@ -20,15 +20,29 @@
   margin: 0;
   overflow-x: hidden;
 }
-  
+  .sidebar-toggle span {
+    background-color: #ffdb58;
+    background-color: var(--theme-color, #ffdb58);
+    display: block;
+    margin-bottom: 4px;
+    width: 16px;
+    height: 2px;
+}
   .content {
     padding-top: 60px;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 180px;
     transition: left .25s ease;
+}
+
+  @media screen and (max-width: 768px) {
+    body.close .sidebar-toggle {
+        background-color: hsla(0, 0%, 100%, .8);
+        transition: background-color 1s;
+        padding: 10px;
+    }
 }
  .sidebar {
    color: #fff;
