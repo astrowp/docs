@@ -1,8 +1,15 @@
 # AstroWP SaaS Theme
 
-Here is evertying you need to know about configuring and customizing the SaaS theme.
+Here is everything you need to know about configuring and customizing the SaaS theme.
 
 ## Config Files
+
+```
+ ── src
+    └── config
+        └── config.json
+        └── theme.json
+```
 
 The SaaS theme comes with two config files for configuring the theme's connection to WordPress and its styling.
 
@@ -76,7 +83,23 @@ This is the config file for customizing the styles.
 
 ## Components
 
-```src/config/components```
+```
+ ── src
+    └── config
+        └── pages
+            └── compare-pricing.json
+            └── cta.json
+            └── faq.json
+            └── feature-alt.json
+            └── feature-grid.json
+            └── features.json
+            └── footer.json
+            └── header.json
+            └── hero.json
+            └── logos.json
+            └── pricing.json
+            └── testimonials.json
+```
 
 Here is where you **update the content for the different sections and components on the pages**.
 
@@ -123,7 +146,22 @@ For example the homepage hero section, the ```hero.json`` file.
 
 ## Pages
 
-```src/config/pages```
+```
+ ── src
+    └── config
+        └── pages
+            └── compare-pricing.json
+            └── 404.json
+            └── about.json
+            └──  blog.json
+            └──  features.json
+            └── home.json
+            └── pricing.json
+            └── privacy.md
+            └── terms.md
+            └── config.json
+            └── theme.json
+```
 
 Here is where you **update the SEO page title, meta description, and content** for the pages. 
 
@@ -170,6 +208,17 @@ Edit the file ```contactform.astro``` in ```/src/components/contactform.astro```
 ### Remove or Re-Order Components on Pages
 
 If you want to remove or re-order components on pages you would have to edit the *core* page files in ```/src/pages/```
+
+```
+ ── src
+    └── pages
+        └── 404.astro
+        └── about.astro
+        └── contact.astro
+        └── features.astro
+        └── index.astro
+        └── pricing.astro
+```
 
 For example, let's say you want to remove the FAQ component from the homepage
 
