@@ -1,19 +1,20 @@
-## Getting Started with AstroWP
+# Getting Started with AstroWP
 
 > First things first, if you haven't already, go and create a free [GitHub account](https://github.com/).
 
-## Fork the repository
+## Forking the repository
 
-After purchasing **AstroWP** you will receive an invite to the private GitHub repository.
+After you have purchased **AstroWP** you will receive an invite to the GitHub repository.
 
 ![Pasted image 20240519171746](https://github.com/astrowp/docs/assets/170225022/31433aa9-2625-4039-a396-dc203fc7ca42)
 
 Click on the "View invitation" link in the email, and accept the invitation and go ahead and fork the repository.
 
-***Are you getting a 404 error?** Make sure you’re signed in to your GitHub account.
-**Will the forked repository be private or public?** When you fork the AstroWP private repository, GitHub will create a copy of that repository under your account, and it will inherit the private status of the original repository.
+![image](https://github.com/astrowp/docs/assets/170225022/ba9bcbc3-507f-4498-ae33-8d7c5f1cb1ee)
 
-## Configure WordPress
+***Are you getting a 404 error?** Then make sure you’re actually signed in to your GitHub account. **Will the forked repository be private or public?** When you fork the AstroWP private repository, GitHub will create a copy of that repository under your account, and it will inherit the private status of the original repository.*
+
+## Configuring WordPress
 
 After purchasing the AstroWP boilerplate you will get an ```.wpress``` file that you'll use to import the headless WordPress version on to your favorite web host.
 
@@ -31,10 +32,15 @@ or you can host WordPress locally using [LocalWP](https://localwp.com/help-docs/
 1. Sign up for hosting, 
 	- You can use a temporary domain provided by the web host, or you can connect a custom domain, either works.
 	- You don't need fancy hosting :) Remember, WordPress will only be the back-end, it's completely decoupled from the front-end.
+
 2. Install a blank WordPress site on your preferred web host.
+
 3. Go to Plugins, and install the free **All In One WP Migration plugin** from the WordPress repository. 
+
 4. Go to All In One WP Migration, and import the ```.wpress``` file.
+
 5. Log back in again using *username* and *password*.
+
 6. Create a new Administrator user (afterwards you can delete the old admin user).
 
 ![Pasted image 20240517114704](https://github.com/astrowp/docs/assets/170225022/301d1b2e-94e3-4eb6-b52e-e0d7f3e9e48e)
@@ -51,24 +57,32 @@ WordPress Username e.g. Mathias
 WordPress Application Password e.g. ABCD 1234 EFGH 5678
 ```
 
-## Setup webhooks
+## Setting Up Webhooks
 
 You can use webhooks and GitHub Actions to create a re-build process for the Astro site for a particular change(s) made in the WordPress backend.
 
-### GitHub Configuration
+### Configuring GitHub
 
 1. First, create a [GitHub personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). This token will be used in the webhook request to authenticate with GitHub.
+
 2. Give it a name, and repository access to your Astro site repo.
+
 3. Under "Repository permissions", set Contents to `Contents: Read and Write`. The final repository permissions should be "Read access to metadata" and "Read and Write access to code".
+
 4. Copy the token on the following page to use for the next steps.
+
 5. In the GitHub repository, go to Settings > Actions > General, and enable `Read and write permissions` under "Workflow permissions".
 
-### WordPress Configuration
+### Configuration WordPress
 
 1. Install the [Uncanny Automator](https://wordpress.org/plugins/uncanny-automator/) plugin.
+
 2. Create a recipe (Logged-in users or Everyone depending on the trigger) and choose WordPress for the Trigger.
+
 3. Choose Webhooks > Send data to a webhook for the Action by clicking "Add action".
+
 4. Select the events you want to use to trigger a re-build e.g. when a post is created.
+
 5. Give the webhook a name and add the URL using your repository in the format of:
 
 ```
@@ -76,7 +90,9 @@ https://api.github.com/repos/{owner}/{repo}/dispatches
 ```
 
 6. Under Request method, choose "POST" (the default).
+
 7. Under Data format, choose "JSON".
+
 8. In the Authorization field, paste your GitHub token in the format of:
 
 ```
@@ -95,9 +111,9 @@ event_type Text webhook
 
 The "published.txt" file in the repository will be created/updated with the current date, which will trigger a re-build with the hosting platform.
 
-### Edit .env.example
+### Edititing .env.example
 
-In your GitHub repository, navigate and go to the ```.env.example``` file. Click on the Pencil icon to edit this file.
+In your GitHub repository, navigate and go to the ```.env.example``` file in the root folder. Click on the **Pencil** icon to edit this file.
 
 ![Pasted image 20240517115903](https://github.com/astrowp/docs/assets/170225022/18e21dbd-ece5-423d-b471-44a53d6bceb1)
 
@@ -112,11 +128,11 @@ WP_APPLICATION_PASSWORD=ABCD 1234 EFGH 5678
 
 ![Pasted image 20240517120236](https://github.com/astrowp/docs/assets/170225022/9ee3f484-7d8a-4cf0-b83c-c2a286ec14ac)
 
-and then Commit the changes.
+and then **Commit** the changes.
 
-### Edit config.json
+### Editing config.json
 
-Open the ```config.json``` file (/src/config/config.json)
+Open the ```config.json``` file (in /src/config/config.json)
 
 ```
 ├── src/
@@ -126,11 +142,13 @@ Open the ```config.json``` file (/src/config/config.json)
 │       └── config.json
 ```
 
-and replace **API_URL** with the WordPress server URL, from the earlier step.
+Edit this file, and replace **API_URL** with the WordPress server URL, from the earlier step.
 
 ![Pasted image 20240517120623](https://github.com/astrowp/docs/assets/170225022/15ea9ec0-da2a-4b0e-a295-5c4080e92313)
 
-and then Commit the changes.
+(you can leave the URL variable empty for now, this is the URL for your deployed site e.g. https://astrowp.com), if you don't know what your deployed site's URL is then the URL for this variable can be added in later.)
+
+and then **Commit** the changes.
 
 ## Run AstroWP locally
 
