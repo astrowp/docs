@@ -74,9 +74,9 @@ or you can host WordPress locally using [LocalWP](https://localwp.com/help-docs/
 
 > Now, you should have three things for moving forward:
 
-**a WordPress Server URL** e.g. https://my-astrowp-project.instawp.xyz
-**a WordPress Username** e.g. Mathias
-**a WordPress Application Password** e.g. ABCD 1234 EFGH 5678
+- a WordPress Server URL e.g. https://my-astrowp-project.instawp.xyz
+- a WordPress Username e.g. Mathias
+- a WordPress Application Password e.g. ABCD 1234 EFGH 5678
 
 ## Configure WordPress
 
