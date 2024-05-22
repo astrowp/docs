@@ -38,7 +38,7 @@ If you are confused about forking and need more help, check out this [GitHub tut
 
 After purchasing the AstroWP starter kit you will get an ```.wpress``` file that you will use to import the Headless WordPress version on to your favorite web host.
 
-> **This ```.wpress``` file comes pre-configured with all the plugins and settings for your Headless WordPress site.**
+> **This .wpress file comes pre-configured with all the plugins and settings for your Headless WordPress site to work.**
 
 You can use any web host you like, I recommend the following web hosts:
 
@@ -60,25 +60,23 @@ or you can host WordPress locally using [LocalWP](https://localwp.com/help-docs/
 
 3. In your WordPress dashboard, go to Plugins, and install and activate the free **All In One WP Migration plugin**. 
 
-4. Go to All In One WP Migration's Import, and import the ```.wpress``` file.
+4. Go to All In One WP Migration's Import, and import the .wpress file.
 
 5. You will be logged out, so log back in again using *username* and *password* as the login credentials.
 
 6. Create a new Administrator user (afterwards, you should delete the old admin user using *username* and *password*).
 
-![Pasted image 20240517114704](https://github.com/astrowp/docs/assets/170225022/301d1b2e-94e3-4eb6-b52e-e0d7f3e9e48e)
+<img src="https://github.com/astrowp/docs/assets/170225022/301d1b2e-94e3-4eb6-b52e-e0d7f3e9e48e" width="750" />
 
 7. Create an Application Password. Go to ```Users > Edit user > Application Password```. Make a copy of this password (this is important!).
 
-![Pasted image 20240517114618](https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260)
+<img src="https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260" width="750" />
 
-Now, you should have three things for moving forward:
+> Now, you should have three things for moving forward:
 
-```
-a WordPress Server URL e.g. https://my-astrowp-project.instawp.xyz
-a WordPress Username e.g. Mathias
-a WordPress Application Password e.g. ABCD 1234 EFGH 5678
-```
+**a WordPress Server URL** e.g. https://my-astrowp-project.instawp.xyz
+**a WordPress Username** e.g. Mathias
+**a WordPress Application Password** e.g. ABCD 1234 EFGH 5678
 
 ## Configure WordPress
 
