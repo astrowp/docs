@@ -18,10 +18,11 @@
    - [ACF](acf.md 'How to customize the Advanced Custom Fields WordPress plugin')
    - [Cloudinary](cloudinary.md 'How to customize the Cloudinary WordPress plugin')
 
-- Astro Customization
+- Astro Theme Customization
 
-  - [SaaS theme](saas-theme.md 'How to configure and customize the AstroWP SaaS starter theme')
-  - [Blog theme](blog-theme.md 'How to configure and customize the AstroWP Blog starter theme')
+  - [Theme customization](astro-theme.md 'How to configure and customize the Astro theme')
+  - [SaaS theme customization](saas-theme.md 'How to configure and customize the AstroWP SaaS starter theme')
+  - [Blog theme customization](blog-theme.md 'How to configure and customize the AstroWP Blog starter theme')
 
 - Deploy
 
