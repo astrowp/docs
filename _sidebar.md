@@ -1,6 +1,6 @@
-- Getting started
+- [Getting started](README.md)
 
-  - [Quick start](quickstart.md)
+  - [Quick start](README.md)
   - [Writing more pages](more-pages.md)
   - [Custom navbar](custom-navbar.md)
   - [Cover page](cover.md)
@@ -9,18 +9,14 @@
 
   - [Configuration](configuration.md)
   - [Themes](themes.md)
-  - [List of Plugins](plugins.md)
-  - [Write a Plugin](write-a-plugin.md)
-  - [Markdown configuration](markdown.md)
-  - [Language highlighting](language-highlight.md)
+  - [Plugins](plugins.md)
   - [Emoji](emoji.md)
 
-- Guide
+- [Deploy](deploy.md)
 
   - [Deploy](deploy.md)
   - [Helpers](helpers.md)
   - [Vue compatibility](vue.md)
   - [CDN](cdn.md)
 
-- [Awesome docsify](awesome.md)
-- [Changelog](changelog.md)
+- [AstroWP.com](https://astrowp.com)
