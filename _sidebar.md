@@ -3,14 +3,21 @@
   - [Getting started](README.md)
   - [Install WordPress](install-wordpress.md)
   - [Install on local](local-install.md)
-  - [Cover page](cover.md)
+  
+- WordPress customization
 
-- Customization
+   - [Customization](customization.md)
+   - [Webhooks](webhooks.md)
+   - [Yoast](#)
+   - [ACF](#)
+   - [Cloudinary](#)
 
-  - [Configuration](configuration.md)
-  - [Themes](themes.md)
-  - [Plugins](plugins.md)
-  - [Emoji](emoji.md)
+- Astro customization
+
+  - [Customization](customization.md)
+  - [SaaS theme](saas-theme.md)
+  - [Blog theme](blog-theme.md)
+  - [SEO](seo.md)
 
 - Deploy
 
@@ -19,5 +26,3 @@
   - [Deploy on Netlify](deploy-netlify.md)
   - [Deploy on Hostinger](deploy-hostinger.md)
   - [Deploy on InstaWP](deploy-instawp.md)
-
-- [AstroWP.com](https://astrowp.com)
