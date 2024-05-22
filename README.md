@@ -1,6 +1,6 @@
-# Getting Started with AstroWP
+## Getting Started with AstroWP
 
-First things first, if you haven't already, go and create a free [GitHub account](https://github.com/).
+> First things first, if you haven't already, go and create a free [GitHub account](https://github.com/).
 
 ## Fork the repository
 
