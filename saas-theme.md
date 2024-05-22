@@ -266,3 +266,5 @@ You can create new pages in WordPress and manage them in your WordPress dashboar
 For example, the theme's privacy policy and terms and conditions page are created as WordPress pages.
 
 Simply add the path to the new page in the header and or the footer menu.
+
+Please note that you cannot use an identical filename (URL slug) for an already existing page on Astro. I.e. a WordPress page named /features/ won't work as there is already an existing /features/ page on Astro.
