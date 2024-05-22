@@ -1,4 +1,4 @@
-## Run AstroWP Locally
+# Run AstroWP Locally
 
 > You don't have to run AstroWP locally, you could
 
@@ -6,16 +6,14 @@ BUT
 
 The benefit of XX is that you can preview changes before deploying
 
+## Prerequisites
 
-
-### Prerequisites
-
-- **Node.js** version 20.3.0 or higher. You can download Node [here](https://nodejs.org/en/download/package-manager).
+- **Node.js** version 20.3.0 or higher installed on your local machine. You can download Node [here](https://nodejs.org/en/download/package-manager).
 - **GitHub Desktop**. [GitHub Desktop](https://desktop.github.com/) has a graphical user interface that simplifies commands and helps you visualize changes.
 - **Text editor** - I recommend VS Code with the [Official Astro extension](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode), but any text editor works.
 - **Terminal** - Astro is accessed through its command-line interface (CLI).
 
-### Installation Guide
+## Installation Guide
 
 In your terminal, run the following commands to clone, install dependencies and run AstroWP on your local machine:
 
@@ -39,7 +37,7 @@ git clone https://github.com/astrowp/headlesswp-saas-theme.git .
 
 *(Note: The dot . at the end ensures the repository is cloned into the current directory, avoiding the creation of a nested directory.)*
 
-4. Then install the dependencies.
+4. Install dependencies.
 
 ```npm install
 npm install
