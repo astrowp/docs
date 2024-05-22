@@ -153,8 +153,8 @@ For example the homepage hero section, the ```hero.json`` file.
             └── compare-pricing.json
             └── 404.json
             └── about.json
-            └──  blog.json
-            └──  features.json
+            └── blog.json
+            └── features.json
             └── home.json
             └── pricing.json
             └── privacy.md
