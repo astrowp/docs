@@ -1,4 +1,4 @@
-- [Getting started](README.md)
+- Getting started
 
   - [Quick start](README.md)
   - [Writing more pages](more-pages.md)
@@ -12,7 +12,7 @@
   - [Plugins](plugins.md)
   - [Emoji](emoji.md)
 
-- [Deploy](deploy.md)
+- Deploy
 
   - [Deploy](deploy.md)
   - [Helpers](helpers.md)
