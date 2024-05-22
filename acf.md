@@ -6,9 +6,11 @@ Your .wpress import files come pre-installed and pre-configured with the free AC
 
 ## Custom Post Types
 
-## Register ACF
+### Register Custom Post Types
 
-### config.json
+For custom post types to work, you have to register them in the config.json file.
+
+#### config.json
 
 ```
  ── src
