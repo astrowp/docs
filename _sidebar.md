@@ -1,8 +1,8 @@
 - Getting started
 
-  - [Quick start](README.md)
-  - [Writing more pages](more-pages.md)
-  - [Custom navbar](custom-navbar.md)
+  - [Getting started](README.md)
+  - [Install WordPress](install-wordpress.md)
+  - [Install on local](local-install.md)
   - [Cover page](cover.md)
 
 - Customization
@@ -15,8 +15,9 @@
 - Deploy
 
   - [Deploy](deploy.md)
-  - [Helpers](helpers.md)
-  - [Vue compatibility](vue.md)
-  - [CDN](cdn.md)
+  - [Deploy on Vercel](deploy-vercel.md)
+  - [Deploy on Netlify](deploy-netlify.md)
+  - [Deploy on Hostinger](deploy-hostinger.md)
+  - [Deploy on InstaWP](deploy-instawp.md)
 
 - [AstroWP.com](https://astrowp.com)
