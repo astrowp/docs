@@ -1,10 +1,10 @@
 # Run AstroWP Locally
 
-> You don't *have to* clone the AstroWP repository to your local machine. You could edit files, and make commits, directly on GitHub.
+> You don't *have to* clone the AstroWP repository to your local machine. You could edit files and make commits directly on GitHub.
 
-BUT. I recommend that you clone the repo and run it locally. Why?
+**OR** you could use VSCode with the [GitHub Repositories extension ](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub). This lets you edit and commit to the GitHub repository directly from GitHub — no cloning or local repository required.
 
-The benefit of XX is that you can preview changes before deploying
+**BUT**. I recommend that you clone the repo and run it locally. *Why?* Because cloning the repository to your local computer makes it easier to add or remove files, and push combined commits, AND it lets you preview the site on localhost instead of having to deploy.
 
 ### Prerequisites
 
@@ -52,7 +52,7 @@ npm run dev
 
 ## VSCode
 
-Of course, you can use every IDE you like, but this starter kit, but when used with Visual Studio Code and the suggested extensions, it will give you the best possible experience customizing your project.
+Of course, you can use any IDE you like with this starter kit, but when used with Visual Studio Code and the suggested extensions, it will give you the best possible experience customizing your project.
 
 These are the extensions I recommend:
 
