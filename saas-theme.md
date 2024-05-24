@@ -120,13 +120,19 @@ For example the homepage hero section, the ```hero.json`` file.
 }
 ```
 
-- **cta.json** (Customize the Call-to-action component)
+### cta.json
 
-- **faq.json** (Customize the FAQ component)
+Customize the Call-to-action component
 
-- **features.json** (Customize the Features 3x2 grid component)
+### faq.json
 
-Here is how you can add in different icons in *features.json*
+Customize the FAQ component
+
+### features.json
+
+Customize the Features 3x2 grid component
+
+Here is how you can use different icons in *features.json*
 
 Head over to [Iconify](https://icon-sets.iconify.design/fluent/?category=General)
 
@@ -142,23 +148,41 @@ Copy the path
 "icon": "fluent:people-audience-24-regular"
 ```
 
-- **feature-alt.json** (Customize the Features hero component)
+### feature-alt.json
 
-- **feature-grid.json** (Customize the Features 2x3 images grid component)
+Customize the Features hero component
 
-- **footer.json** (Customize the sitewide Footer, including the links, components)
+### feature-grid.json
 
-- **header.json** (Customize the sitewide Header, including the links, components)
+Customize the Features 2x3 images grid component
 
-- **hero.json** (Customize the homepage Hero component)
+### footer.json
 
-- **logos.json** (Customize the Logos component)
+Customize the sitewide Footer, including the links, components
 
-- **pricing.json** (Customize the Pricing, first section, component)
+### header.json
 
-- **compare-pricing.json** (Customize the Pricing comparison table component)
+Customize the sitewide Header, including the links, components
 
-- **testimonials.json** (Customize the Client testimonials component)
+### hero.json
+
+Customize the homepage Hero component
+
+### logos.json
+
+Customize the Logos component
+
+### pricing.json
+
+Customize the Pricing, first section, component
+
+### compare-pricing.json
+
+Customize the Pricing comparison table component
+
+### testimonials.json
+
+Customize the Client testimonials component
 
 ## Customize Pages
 
