@@ -2,20 +2,20 @@
 
 ## Install WordPress
 
-After purchasing the AstroWP starter kit you will get a ```.wpress``` file that you will use to import the Headless WordPress version on to your favorite web host.
+After purchasing the AstroWP starter kit, you will receive a ```.wpress``` file that you will use to import the Headless WordPress version onto your favourite web host.
 
 > **This .wpress file comes pre-configured with all the plugins and settings for your Headless WordPress site to work.**
 
-You can use any web host you like, I recommend the following web hosts:
+You can use any web host you like, but I recommend the following web hosts:
 
 - [Hostinger](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=1036&source=astrowp)
 - [SiteGround](https://www.siteground.com/index.htm?afcode=cd053fc09a801013fd59695b1d137bbe)
 - [InstaWP](https://app.instawp.io/register?ref=vPtVNfKldT)
 - [DigitalOcean](https://www.digitalocean.com/pricing)
 
-What's the *easiest* option? Personally, I find [InstaWP](https://app.instawp.io/register?ref=vPtVNfKldT) to be the easiest option for spinning up a WordPress site.
+What's the *easiest* option? Personally, I find [InstaWP](https://app.instawp.io/register?ref=vPtVNfKldT) to be the easiest option for quickly spinning up a WordPress site.
 
-What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=1036&source=astrowp). You could also use Hostinger for both the backend and the frontend - host WordPress on a subdomain (e.g. *wordpress.myastrosite.com*) and deploy it to Astro on the frontend (e.g. *www<span>.</span>myastrosite.com*).
+What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=1036&source=astrowp). You can also use Hostinger for both the backend and the frontend - host WordPress on a subdomain (e.g. *wordpress.myastrosite.com*) and deploy it to Astro on the frontend (e.g. *www<span>.</span>myastrosite.com*).
 
 .. or you can host WordPress for free on your local machine using [LocalWP](https://localwp.com/help-docs/getting-started/installing-local/)
 
