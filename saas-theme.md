@@ -11,7 +11,7 @@ Here is everything you need to know about configuring and customizing the SaaS t
         └── theme.json
 ```
 
-The SaaS theme comes with two config files for configuring the theme's connection to WordPress and its styling.
+The SaaS theme comes with two config files, one is for configuring the theme's connection to WordPress, and the other one is for styling.
 
 ### config.json
 
@@ -27,9 +27,9 @@ This is the config file for connecting your Headless WordPress site. For more in
 }
 ```
 
-- The ```API_URL``` variable is used to **connect your WordPress site**; it should be the full URL of where it is hosted e.g. https://astrowp-demo.instawp.xyz
+- The ```API_URL``` variable is used to **connect your WordPress site**; it should be the full URL of where it is hosted e.g. https:<span>//</span>astrowp-demo.instawp.xyz
 
-- The ```site:url``` variable is used to **connect your published/deployed site** to canonical links, XML sitemap etc., it should be the full URL e.g. https://astrowp.com
+- The ```site:url``` variable is used to **connect your published/deployed site** to canonical links, XML sitemap, etc., it should be the full URL e.g. https<span>://</span>astrowp.com
 
 - The ```post_types``` variable **registers ACF custom post types** used on the WordPress site.
 
@@ -39,7 +39,7 @@ To register multiple custom post types, you simply use this syntax:
 "post_types": ["Glossary", "Coupons"]
 ```
 
-For more information on WordPress custom fields and post types, see [ACF](acf.md)
+For more information on how to do WordPress custom fields and post types, see this [ACF](acf.md) tutorial.
 
 ### theme.json
 
@@ -73,15 +73,15 @@ This is the config file for customizing the styles.
 }
 ```
 
-- Enable/disable the theme's **Dark mode**
+- Enable/disable the theme's **Dark mode**.
 
-- Set the theme's **Accent color** in HEX
+- Set the theme's **Accent color** in HEX.
 
-- Customize the theme's **Font family** (if you prefer another font family like Poppins, simply change this to ```Poppins:wght@400;500;700```)
+- Customize the theme's **Font family** (if you prefer another font family like Poppins, simply change this to ```Poppins:wght@400;500;700```).
 
-- Customize the theme's **Font sizes** with Tailwind CSS syntax
+- Customize the theme's **Font sizes** with Tailwind CSS syntax.
 
-## Components
+## Customize Components
 
 ```
  ── src
@@ -120,31 +120,47 @@ For example the homepage hero section, the ```hero.json`` file.
 }
 ```
 
-- cta.json (Customize the Call-to-action component)
+- **cta.json** (Customize the Call-to-action component)
 
-- faq.json (Customize the FAQ component)
+- **faq.json** (Customize the FAQ component)
 
-- features.json (Customize the Features 3x2 grid component)
+- **features.json** (Customize the Features 3x2 grid component)
 
-- feature-alt.json (Customize the Features hero component)
+Here is how you can add in different icons in *features.json*
 
-- feature-grid.json (Customize the Features 2x3 images grid component)
+Head over to [Iconify](https://icon-sets.iconify.design/fluent/?category=General)
 
-- footer.json (Customize the sitewide Footer, including the links, components)
+Icons are Fluent UI System Icons 24 Filled
 
-- header.json (Customize the sitewide Header, including the links, components)
+![image](https://github.com/astrowp/docs/assets/170225022/da74d996-911a-4dd2-94d1-564962a4d443)
 
-- hero.json (Customize the homepage Hero component)
+Copy the path
 
-- logos.json (Customize the Logos component)
+![image](https://github.com/astrowp/docs/assets/170225022/0eef8f6e-ee04-4776-84f5-6cea51bcd016)
 
-- pricing.json (Customize the Pricing, first section, component)
+```
+"icon": "fluent:people-audience-24-regular"
+```
 
-- compare-pricing.json (Customize the Pricing comparison table component)
+- **feature-alt.json** (Customize the Features hero component)
 
-- testimonials.json (Customize the Client testimonials component)
+- **feature-grid.json** (Customize the Features 2x3 images grid component)
 
-## Pages
+- **footer.json** (Customize the sitewide Footer, including the links, components)
+
+- **header.json** (Customize the sitewide Header, including the links, components)
+
+- **hero.json** (Customize the homepage Hero component)
+
+- **logos.json** (Customize the Logos component)
+
+- **pricing.json** (Customize the Pricing, first section, component)
+
+- **compare-pricing.json** (Customize the Pricing comparison table component)
+
+- **testimonials.json** (Customize the Client testimonials component)
+
+## Customize Pages
 
 ```
  ── src
@@ -183,31 +199,114 @@ For example the contact page, the ```contact.json`` file.
 }
 ```
 
-- 404.json (the 404 error page)
+- **404.json** (the 404 error page)
 
-- about.json (the about page)
+- **about.json** (the about page)
 
-- blog.json (the blog index page)
+- **blog.json** (the blog index page)
 
-- features.json (the features page)
+- **features.json** (the features page)
 
-- home.json (the homepage)
+- **home.json** (the homepage)
 
-- pricing.json (the pricing page)
+- **pricing.json** (the pricing page)
 
-- contact.json (the contact page)
+- **contact.json** (the contact page)
 
-To make the contact page's submission form to work, you need to create your free access key from [Web3 Forms](https://web3forms.com/). Then you will get all form submissions in your email inbox.
+  ### Contact Form
 
-Edit the file ```contactform.astro``` in ```/src/components/contactform.astro```, go to line 16 add your access key
+To make the contact page's submission form to work, you need to create your free access key from [Web3 Forms](https://web3forms.com/). Then, you will receive all form submissions in your email inbox.
+
+Edit the file ```contactform.astro``` in ```/src/components/contactform.astro```, go to line 16 add your access key.
 
 ```
 <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
 ```
 
+I also recommend that you add spam protection to the form. [Cloudflare Turnstile](https://developers.cloudflare.com/turnstile/get-started/) is a great, free option for this.
+
+Before the closing </form> tag, add in *<div class="cf-turnstile mt-8" data-sitekey="XXXXXXXXXXXXX"></div>*
+
+```
+  <Button type="submit" size="lg" block>Send Message</Button>
+  <div id="result" class="mt-3 text-center"></div>
+
+<div class="cf-turnstile mt-8" data-sitekey="XXXXXXXXXXXXX"></div>
+
+</form>
+```
+
+Then, edit the file ```layout.astro``` in ```src/layouts/layout.astro```, go to line 91 add in this script tag
+
+```
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+```
+
+Now your contact form is protected by Cloudflare Turnstile.
+
+## Add or Edit Header and Footer Links
+
+```
+ ── src
+    └── config
+        └── pages
+            └── footer.json
+            └── header.json
+```
+
+The header and footer links are in these files:
+
+- **footer.json** (Customize the sitewide Footer, including the links, components)
+
+- **header.json** (Customize the sitewide Header, including the links, components)
+
+Here, you can edit, add or delete links in the header and the footer.
+
+```
+{
+  "title": "Astro WP",
+  "logo": "logo.png",
+  "link": {
+    "title": "",
+    "href": "#"
+  },
+  "button": {
+    "title": "Get Started Now",
+    "href": "#"
+  },
+  "menu": [
+    {
+      "title": "Features",
+      "path": "/features/"
+    },
+    {
+      "title": "Pricing",
+      "path": "/pricing/"
+    },
+    {
+      "title": "Blog",
+      "path": "#",
+      "children": [
+        { "title": "Blog", "path": "/blog/" },
+        { "title": "Category: Astro", "path": "/blog/category/astro/" },
+        { "title": "Category: WordPress", "path": "/blog/category/wordpress/" }
+      ]
+    },
+    {
+      "title": "About Us",
+      "path": "/about/"
+    },
+    {
+      "title": "Contact Us",
+      "path": "/contact/"
+    }
+  ]
+}
+```
+
 ### Remove or Re-Order Components on Pages
 
-If you want to remove or re-order components on pages you would have to edit the *core* page files in ```/src/pages/```
+If you want to remove or re-order components on pages, you would have to edit the *core* page files in ```/src/pages/```
 
 ```
  ── src
@@ -220,9 +319,9 @@ If you want to remove or re-order components on pages you would have to edit the
         └── pricing.astro
 ```
 
-For example, let's say you want to remove the FAQ component from the homepage
+For example, let's say you want to remove the FAQ component from the homepage.
 
-Then you would have to edit the ```src/pages/index.astro``` file and delete the ```<Faq />``` component
+Then you would have to edit the ```src/pages/index.astro``` file and delete the ```<Faq />``` component.
 
 ```
 ---
@@ -259,14 +358,29 @@ import home from "@config/pages/home.json";
 </Layout>
 ```
 
+*Tip: If a component is not inside the <Container></Container> then it's displayed as full-width on the page.*
+
 ### Publish New Pages
 
-You can create new pages in WordPress and manage them in your WordPress dashboard.
-
-For example, the theme's privacy policy and terms and conditions page are created as WordPress pages.
+You can create new pages in your WordPress dashboard and link to them from the header and footer menu. For example, the theme's privacy policy and terms and conditions page are created as WordPress pages.
 
 Simply add the path to the new page in the header and or the footer menu.
+
+```
+"policies": [
+      {
+        "title": "Privacy Policy",
+        "path": "/privacy-policy/"
+      },
+      {
+        "title": "Terms & Conditions",
+        "path": "/terms-conditions/"
+    }
+    ]
+```
 
 Please note that you cannot use an identical filename (URL slug) for an already existing page on Astro. I.e. a WordPress page named /features/ won't work as there is already an existing /features/ page on Astro.
 
 ## Images & Icons
+
+Iconify
