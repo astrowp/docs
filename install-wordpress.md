@@ -9,8 +9,9 @@ After purchasing the AstroWP starter kit you will get a ```.wpress``` file that 
 You can use any web host you like, I recommend the following web hosts:
 
 - [Hostinger](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=1036&source=astrowp)
-- SiteGround afflink
+- [SiteGround](https://www.siteground.com/index.htm?afcode=cd053fc09a801013fd59695b1d137bbe)
 - [InstaWP](https://app.instawp.io/register?ref=vPtVNfKldT)
+- [DigitalOcean](https://www.digitalocean.com/pricing)
 
 What's the *easiest* option? Personally, I find InstaWP to be the easiest option for spinning up a WordPress site.
 
@@ -74,8 +75,6 @@ In your GitHub repository, open the ```config.json``` file (in ```/src/config/co
 
 ```
 ├── src/
-│   └── pages/
-│   │   └── ...
 |   └── config/
 │       └── config.json
 ```
@@ -87,3 +86,5 @@ Edit this file, and replace **API_URL** with the WordPress server URL from the e
 (you can leave the URL variable empty for now; this is the URL for your deployed site (e.g. https://astrowp.com), if you don't know what your deployed site's URL will be yet, then the URL for this variable can be added in later.)
 
 and then **Commit** the changes.
+
+That's it! Your WordPress site is now connected to Astro.
