@@ -10,12 +10,11 @@ You can use any web host you like, I recommend the following web hosts:
 
 - [Hostinger](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=1036&source=astrowp)
 - SiteGround afflink
-- Cloudways afflink
 - [InstaWP](https://app.instawp.io/register?ref=vPtVNfKldT)
 
 What's the *easiest* option? Personally, I find InstaWP to be the easiest option for spinning up a WordPress site.
 
-What's the *cheapest* option? That's got to be Hostinger (You could use Hostinger for both the backend and the frontend - host WordPress on a subdomain (e.g. *wordpress.myastrosite.com*) and deploy it Astro on the frontend (e.g. *www.myastrosite.com*). 
+What's the *cheapest* option? That's got to be Hostinger. (You could also use Hostinger for both the backend and the frontend - host WordPress on a subdomain (e.g. *wordpress.myastrosite.com*) and deploy it to Astro on the frontend (e.g. *wwww.myastrosite.com*.)
 
 .. or you can host WordPress for free on your local machine using [LocalWP](https://localwp.com/help-docs/getting-started/installing-local/)
 
