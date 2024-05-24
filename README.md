@@ -2,7 +2,7 @@
 
 After you purchase AstroWP you will get two things to get your Headless WordPress site up and running:
 
-1. An invitation to the AstroWP GitHub repositiory
+1. An invite to the AstroWP GitHub repository.
 2. A .wpress WordPress installation file.
 
 ## Fork the Repository
@@ -36,13 +36,3 @@ After you have purchased **AstroWP**, you will receive an invite to AstroWP's Gi
 7. Click **Create fork**, and you are done. AstroWP's repository is now yours!
 
 If you are confused about forking and need more help, check out this [GitHub tutorial](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository).
-
-### What's Next?
-
-Install and configure WordPress
-Customize the site
-Deploy
-
-Vercel project configuration
-
-Then click the Deploy button and your project will be deployed.
