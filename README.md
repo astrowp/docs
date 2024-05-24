@@ -1,8 +1,13 @@
 # Get Started with AstroWP
 
-> First things first, if you haven't already, go and create a free [GitHub account](https://github.com/).
+After you purchase AstroWP you will get two things to get your Headless WordPress site up and running:
+
+1. An invitation to the AstroWP GitHub repositiory
+2. A .wpress WordPress installation file.
 
 ## Fork the Repository
+
+> If you haven't already, log in to your GitHub account or create a free [GitHub account](https://github.com/).
 
 After you have purchased **AstroWP**, you will receive an invite to AstroWP's GitHub repository.
 
