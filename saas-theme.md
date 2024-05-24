@@ -1,6 +1,6 @@
 # AstroWP SaaS Theme
 
-Here is everything you need to know about configuring and customizing the SaaS theme.
+Here is everything you need to know about configuring and customizing the AstroWP SaaS theme.
 
 ## Config Files
 
@@ -248,21 +248,33 @@ For example the contact page, the ```contact.json`` file.
 }
 ```
 
-- **404.json** (the 404 error page)
+### 404.json
 
-- **about.json** (the about page)
+The 404 error page.
 
-- **blog.json** (the blog index page)
+### about.json
 
-- **features.json** (the features page)
+The about page.
 
-- **home.json** (the homepage)
+### blog.json
 
-- **pricing.json** (the pricing page)
+The blog index page.
 
-- **contact.json** (the contact page)
+### features.json
 
-  ### Contact Form
+The features page.
+
+### home.json
+
+The homepage.
+
+### pricing.json
+
+The pricing page.
+
+### contact.json
+
+#### Contact Form
 
 To make the contact page's submission form to work, you need to create your free access key from [Web3 Forms](https://web3forms.com/). Then, you will receive all form submissions in your email inbox.
 
@@ -428,8 +440,30 @@ Simply add the path to the new page in the header and or the footer menu.
     ]
 ```
 
-Please note that you cannot use an identical filename (URL slug) for an already existing page on Astro. I.e. a WordPress page named /features/ won't work as there is already an existing /features/ page on Astro.
+Please note that you cannot use an identical filename (URL slug) for an already existing page on Astro. I.e. if you create a a WordPress page named /features/ it won't work as there is already an existing /features/ page on Astro.
 
-## Images & Icons
+## Images 
 
-Iconify
+Images are saved in ```src/assets``` and you **MUST** use the existing image file names for images to work. In other words, you can create your own images but you have to use the existing filenames.
+
+### Logo
+
+You can choose to have either a text logo or an image logo.
+
+In ```src/config/components/header.json``` if you leave logo variable empty, the the title will be used as a text logo.
+
+```
+{
+  "title": "Astro WP",
+  "logo": "",
+```
+
+But if you have the variable as logo.png, then the image ```logo.png``` will be used as the logo.
+
+```
+{
+  "title": "Astro WP",
+  "logo": "logo.png",
+```
+
+Please note, that the favicon.svg and opengraph.jpg are saved in the ```public``` folder.
