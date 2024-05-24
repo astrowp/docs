@@ -25,7 +25,7 @@ What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz
 
 1. Sign up for hosting.
 
- - You can use a temporary domain provided by the web host, or you can connect a custom domain, either works fine.
+ - You can use the temporary domain provided by most web hosts, or you can connect a custom domain, either works fine.
  - You don't need to get flashy hosting :) Remember, WordPress is only for the backend; it's completely decoupled from the static frontend.
 
 2. Install a blank WordPress site.
