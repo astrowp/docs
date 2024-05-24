@@ -124,11 +124,17 @@ For example the homepage hero section, the ```hero.json`` file.
 
 Customize the Call-to-action component.
 
+![image](https://github.com/astrowp/docs/assets/170225022/c0b6d22e-3a28-405c-84d0-be40d8ddc1b3)
+
 ### faq.json
+
+![image](https://github.com/astrowp/docs/assets/170225022/58ba14ba-c2e4-467b-abff-818ba34bcdc7)
 
 Customize the FAQ component.
 
 ### features.json
+
+![image](https://github.com/astrowp/docs/assets/170225022/f6682772-5cd3-4811-b423-e0d5c506d131)
 
 Customize the Features 3x2 grid component.
 
@@ -156,25 +162,37 @@ and add it in, as the "icon" variable:
 
 ### feature-alt.json
 
+![image](https://github.com/astrowp/docs/assets/170225022/14430ff4-566f-4f87-84c4-6be29951e439)
+
 Customize the Features hero component.
 
 ### feature-grid.json
+
+![image](https://github.com/astrowp/docs/assets/170225022/eb826eb0-7730-4c51-b548-80b357d0504c)
 
 Customize the Features 2x3 images grid component.
 
 ### footer.json
 
+![image](https://github.com/astrowp/docs/assets/170225022/3f90a350-8df6-41db-b9d0-cb71de8130f7)
+
 Customize the sitewide Footer, including the links, components.
 
 ### header.json
+
+![image](https://github.com/astrowp/docs/assets/170225022/37df0e0c-0af7-454f-ba4e-9a145ad13172)
 
 Customize the sitewide Header, including the links, components.
 
 ### hero.json
 
+![image](https://github.com/astrowp/docs/assets/170225022/ee45bfb2-4956-4043-961a-2b849bbfdeb8)
+
 Customize the homepage Hero component.
 
 ### logos.json
+
+![image](https://github.com/astrowp/docs/assets/170225022/28a78144-7b05-472a-bd61-a5948d7988f4)
 
 Customize the Logos component.
 
@@ -196,16 +214,21 @@ Paste in the SVG for the new logo.
 <!-- END SVG icon code -->
 ```
 
-
 ### pricing.json
+
+![image](https://github.com/astrowp/docs/assets/170225022/1fce9017-4f72-456a-9879-9554ac0f40cd)
 
 Customize the Pricing, first section, component.
 
 ### compare-pricing.json
 
+![image](https://github.com/astrowp/docs/assets/170225022/73767b4d-accf-4ec8-a090-a581e8736a6e)
+
 Customize the Pricing comparison table component.
 
 ### testimonials.json
+
+![image](https://github.com/astrowp/docs/assets/170225022/0f934ac9-a6e2-4629-9dc3-84aee142bb86)
 
 Customize the Client testimonials component.
 
