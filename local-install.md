@@ -1,16 +1,15 @@
 # Run AstroWP Locally
 
-> You don't *have to* clone the AstroWP repository to your local machine. You could edit files and make commits directly on GitHub.
+> You don't *have to* clone the AstroWP repository to your local machine. Technically, you could edit files and make commits directly on GitHub.
 
-**OR** you could use VSCode with the [GitHub Repositories extension ](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub). This lets you edit and commit to the GitHub repository directly from GitHub — no cloning or local repository required.
+**OR** you could use VS Code with the [GitHub Repositories extension ](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub). This extension lets you {edit and commit}(https://www.youtube.com/watch?v=uCDKpsIRLPc) to the GitHub repository directly from GitHub — no cloning or local repository required.
 
-**BUT**. I recommend that you clone the repo and run it locally. *Why?* Because cloning the repository to your local computer makes it easier to add or remove files, and push combined commits, AND it lets you preview the site on localhost instead of having to deploy.
+**BUT** I recommend that you clone the repo and run it locally. *Why?* Because cloning the repository to your local computer makes it easier to add or remove files, and push combined commits, AND it lets you preview the site on localhost instead of having to deploy.
 
 ### Prerequisites
 
 - **Node.js** version 20.3.0 or higher installed on your local machine. You can download Node [here](https://nodejs.org/en/download/package-manager).
-- **Text editor / IDE** - I recommend using [VS Code](https://code.visualstudio.com/download) with the official Astro and GitHub extensions, but any text editor works.
-- **Terminal** - Astro is accessed through its command-line interface (CLI).
+- **Text editor / IDE** - I recommend using [VS Code](https://code.visualstudio.com/download) with the official Astro and GitHub Repositories extensions, but any text editor works.
 
 ## Installation Guide
 
