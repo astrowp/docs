@@ -1,16 +1,22 @@
 # Advanced Custom Fields (ACF)
 
-Your Saas Theme .wpress import files come pre-installed and pre-configured with the free ACF WordPress plugin.
+The AstroWP Saas Theme .wpress import files come pre-installed with the free ACF WordPress plugin.
 
 ## Custom Meta Fields
 
-Create meta fields in ACF, choose to display meta fields (in posts, pages, or custom post types).
+Create a new Meta Fields Group in ACF, and choose where to display the meta fields (in posts, pages, or custom post types).
 
-![image](https://github.com/astrowp/docs/assets/170225022/8c0813d7-9cfc-41a5-ab5d-de2449657933)
+![image](https://github.com/astrowp/docs/assets/170225022/b8bfe0f1-00aa-49d7-8c17-7a7e09e6917d)
 
-Using GenerateBlocks Headline Block and its dynamic data field settings.
+Then you can use either the ACF shortcode (this only works for simple text-based values):
 
-![image](https://github.com/astrowp/docs/assets/170225022/72f54399-fb0c-4df2-a281-f4cf34f3e9e1)
+```
+[acf field="discount"]
+```
+
+or [GenerateBlocks Dynamic Data](https://docs.generateblocks.com/article/dynamic-data-options-overview/) in a Headline block, and add the meta value in the dynamic data field settings.
+
+![image](https://github.com/astrowp/docs/assets/170225022/27c62be5-f8c8-4858-b9bd-0914db1ca598)
 
 Meta fields are displayed on the front end.
 
