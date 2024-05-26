@@ -15,18 +15,18 @@ You can use any web host you like, but I recommend the following web hosts:
 
 What's the *easiest* option? Personally, I find [InstaWP](https://app.instawp.io/register?ref=vPtVNfKldT) to be the easiest option for quickly spinning up a WordPress site.
 
-What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=1036&source=astrowp). You can also use Hostinger for both the backend and the frontend - host WordPress on a subdomain (e.g. *wordpress.myastrosite.com*) and deploy it to Astro on the frontend (e.g. *www<span>.</span>myastrosite.com*).
+What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=1036&source=astrowp).
 
-.. or you can host WordPress for free on your local machine using [LocalWP](https://localwp.com/help-docs/getting-started/installing-local/)
+.. or you can host WordPress for free on your local machine using [LocalWP*](https://localwp.com/help-docs/getting-started/installing-local/)
 
-*If you use LocalWP, then keep in mind that when deploying the site, your WordPress site will need to be exposed to the Internet i.e. deployed/hosted. This is something LocalWP isn't made to do - although if you are an advanced user, you can configure LocalWP to work with Ngrok or Cloudflare tunnels.*
+*If you decide to go with LocalWP, then keep in mind that when deploying the site, your WordPress site will need to be exposed to the Internet i.e. deployed/hosted. This is something LocalWP isn't made to do - although if you are an advanced user, you can configure LocalWP to work with Ngrok or Cloudflare tunnels.*
 
 ### Step-by-Step Guide
 
 1. Sign up for hosting.
 
- - You can use the temporary domain provided by most web hosts, or you can connect a custom domain, either works fine.
- - You don't need to get flashy hosting :) Remember, WordPress is only for the backend; it's completely decoupled from the static frontend.
+ - You can use the temporary domain provided by most web hosts, or you can connect a custom domain; either works fine.
+ - You don't need to get flashy hosting :) Remember, WordPress is only for the backend; it's completely decoupled from the static front end.
 
 2. Install a blank WordPress site.
 
