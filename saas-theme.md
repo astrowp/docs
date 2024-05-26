@@ -447,15 +447,14 @@ Simply add the path to the new page in the header and or the footer menu.
 
 Please note that you cannot use an identical filename (URL slug) for an already existing page on Astro. I.e. if you create a a WordPress page named /features/ it won't work as there is already an existing /features/ page on Astro.
 
-You can of course create new pages in Astro, in the ```/src/pages/``` folder.
+You can, of course, create new pages in Astro, in the ```/src/pages/``` folder. Here is the structure of a simple page, that could be saved as ```test.astro```
 
 ```
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
-import Cta from "@components/cta.astro";
-import Faq from "@components/faq.astro";
-import Testimonials from "@components/testimonials.astro";
+import Cta from "@components/cta.astro"; <--- the CTA component added in
+import Testimonials from "@components/testimonials.astro"; <--- the Testimonials component added in
 ---
 
 <Layout
@@ -504,9 +503,7 @@ Please note, that the favicon.svg and opengraph.jpg are saved in the ```public``
 
 ### Icons
 
-Head over to [Iconify](https://icon-sets.iconify.design/fluent/?category=General)
-
-Icons are Fluent UI System Icons 24 Filled. Search for an icon:
+Head over to [Iconify](https://icon-sets.iconify.design/fluent/?category=General). Icons are Fluent UI System Icons 24 Filled. Search for an icon:
 
 ![image](https://github.com/astrowp/docs/assets/170225022/da74d996-911a-4dd2-94d1-564962a4d443)
 
