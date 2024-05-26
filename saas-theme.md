@@ -328,7 +328,7 @@ Then, edit the file ```layout.astro``` in ```src/layouts/layout.astro```, go to 
 
 Now your contact form is protected by Cloudflare Turnstile.
 
-## Add or Edit Header and Footer Links
+## Header and Footer Links
 
 ```
  ── src
@@ -388,7 +388,7 @@ Here, you can edit, add or delete links in the header and the footer.
 }
 ```
 
-### Add, Remove or Re-Order Components on Pages
+## Add, Remove or Re-Order Components on Pages
 
 If you want to add, remove or re-order components on pages, you would have to edit the *core* page files in ```/src/pages/```
 
@@ -426,7 +426,7 @@ Then you would have to edit the ```src/pages/index.astro``` file and delete the 
 
 *Tip: If a component is not inside the <Container></Container> then it's displayed as full-width on the page.*
 
-### Publish New Pages
+## Publish New Pages
 
 You can create new pages in your WordPress dashboard and link to them from the header and footer menu. For example, the SaaS theme's privacy policy and terms and conditions page are created as WordPress pages.
 
@@ -501,3 +501,17 @@ But if you set the variable to logo.png, the image ```logo.png``` will be used a
 You can use a different filename for the logo (e.g., mycompany-logo.png) as long as it is uploaded to the ```src/assets``` folder.
 
 Please note, that the favicon.svg and opengraph.jpg are saved in the ```public``` folder.
+
+### Icons
+
+Head over to [Iconify](https://icon-sets.iconify.design/fluent/?category=General)
+
+Icons are Fluent UI System Icons 24 Filled. Search for an icon:
+
+![image](https://github.com/astrowp/docs/assets/170225022/da74d996-911a-4dd2-94d1-564962a4d443)
+
+Copy the path.
+
+![image](https://github.com/astrowp/docs/assets/170225022/0eef8f6e-ee04-4776-84f5-6cea51bcd016)
+
+and add it in, as the "icon" variable:
