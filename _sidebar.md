@@ -3,7 +3,6 @@
   - [Getting started](README.md 'How to get started with AstroWP')
   - [Install WordPress](install-wordpress.md 'How to install headless WordPress')
   - [Install on local](local-install.md 'How to install and clone AstroWP on your local machine')
-  - [Deploy](deploy.md 'How to deploy your AstroWP project')
   
 - Features
 
@@ -26,7 +25,5 @@
 
 - Deploy
 
-  - [Deploy](deploy.md 'How to deploy your AstroWP project')
-  - [Deploy on Vercel](deploy-vercel.md 'How to deploy your AstroWP project on Vercel')
-  - [Deploy on Netlify](deploy-netlify.md 'How to deploy your AstroWP project on Netlify')
-  - [Deploy on Hostinger](deploy-hostinger.md 'How to deploy your AstroWP project on Hostinger')
+  - [Deployment](deploy.md 'How to deploy your AstroWP site')
+  - [Webhooks](webhooks.md 'How to setup Webhooks to auto-deploy your site')
