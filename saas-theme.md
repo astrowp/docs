@@ -103,7 +103,7 @@ This is the config file for customizing the styles.
 
 Here is where you **update the content for the different sections and components on the pages**.
 
-For example the homepage hero section, the ```hero.json`` file.
+For example, the homepage hero section, the ```hero.json``` file.
 
 ```
 {
@@ -253,7 +253,7 @@ Customize the Client testimonials component.
 
 Here is where you **update the SEO page title, meta description, and content** for the pages. 
 
-For example the contact page, the ```contact.json`` file.
+For example the contact page, the ```contact.json``` file.
 
 ```
 {
@@ -388,9 +388,9 @@ Here, you can edit, add or delete links in the header and the footer.
 }
 ```
 
-### Remove or Re-Order Components on Pages
+### Add, Remove or Re-Order Components on Pages
 
-If you want to remove or re-order components on pages, you would have to edit the *core* page files in ```/src/pages/```
+If you want to add, remove or re-order components on pages, you would have to edit the *core* page files in ```/src/pages/```
 
 ```
  ── src
@@ -428,7 +428,7 @@ Then you would have to edit the ```src/pages/index.astro``` file and delete the 
 
 ### Publish New Pages
 
-You can create new pages in your WordPress dashboard and link to them from the header and footer menu. For example, the theme's privacy policy and terms and conditions page are created as WordPress pages.
+You can create new pages in your WordPress dashboard and link to them from the header and footer menu. For example, the SaaS theme's privacy policy and terms and conditions page are created as WordPress pages.
 
 Simply add the path to the new page in the header and or the footer menu.
 
@@ -447,13 +447,40 @@ Simply add the path to the new page in the header and or the footer menu.
 
 Please note that you cannot use an identical filename (URL slug) for an already existing page on Astro. I.e. if you create a a WordPress page named /features/ it won't work as there is already an existing /features/ page on Astro.
 
+You can of course create new pages in Astro, in the ```/src/pages/``` folder.
+
+```
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Faq from "@components/faq.astro";
+import Testimonials from "@components/testimonials.astro";
+---
+
+<Layout
+  title="the page title for this page"
+  description="the meta description for this page"
+  footerMargin={false}
+>
+  <Container>
+Here goes the content of the page, use Tailwind CSS to structure the content
+  </Container>
+
+    <Testimonials /> <--- the Testimonials component added in
+    <Cta />  <--- the CTA component added in
+</Layout>
+```
+
 ## Images 
 
-Images are saved in ```src/assets``` and you **MUST** use the existing image file names for images to work. In other words, you can create your own images but you have to use the existing filenames.
+Images are saved in ```src/assets```.
+
+> You **MUST** use the existing image file names for images to work. In other words, you can create your own images but you have to use the existing filenames.
 
 ### Logo
 
-You can choose to have either a text logo or an image logo.
+You can choose to use either a text logo or an image logo.
 
 In ```src/config/components/header.json``` if you leave logo variable empty, then the title will be used as a text logo.
 
@@ -463,7 +490,7 @@ In ```src/config/components/header.json``` if you leave logo variable empty, the
   "logo": "",
 ```
 
-But if you have the variable as logo.png, then the image ```logo.png``` will be used as the logo.
+But if you set the variable to logo.png, the image ```logo.png``` will be used as the logo.
 
 ```
 {
@@ -471,6 +498,6 @@ But if you have the variable as logo.png, then the image ```logo.png``` will be 
   "logo": "logo.png",
 ```
 
-You can use a different filename for the logo (.e.g. mycompany-logo.png), as long as the filename is uploaded in the ```src/assets``` folder.
+You can use a different filename for the logo (e.g., mycompany-logo.png) as long as it is uploaded to the ```src/assets``` folder.
 
 Please note, that the favicon.svg and opengraph.jpg are saved in the ```public``` folder.
