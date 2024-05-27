@@ -47,7 +47,7 @@ After selecting the repository, you will be promted to configure the build setti
 
 ### 4. Deploy the site
 
-Now click on the Deploy site button and wait for the deployment to finish. After that, you should be able to visit your freshly deployed SaaS.
+Now click on the Deploy site button and wait for the deployment to finish.
 
 ![image](https://github.com/astrowp/docs/assets/170225022/c5a87c29-8adb-49a7-b8cc-56d0896629ac)
 
@@ -65,7 +65,7 @@ Give the webhook and name and save it.
 
 ### 6. Add a custom domain
 
-Connect your custom domain, or you can continue using the temporary
+Connect your custom domain, or you can continue using the temporary one given to you.
 
 ![image](https://github.com/astrowp/docs/assets/170225022/8424ccce-4f2d-433b-a34c-bde40d6e4af2)
 
@@ -83,8 +83,45 @@ Simply add the Netlify attribute in the ```<form>``` tag to enable form detectio
 
 ## Deploy to Digital Ocean App Platform
 
+### .1 Create an account
 
-### Auto-Deploy Webhook
+Go to DigitalOcean and [sign up for an account](https://www.digitalocean.com/products/app-platform).
+
+![image](https://github.com/astrowp/docs/assets/170225022/b45154ab-b4a8-4c8c-a5ab-a533251cf5d1)
+
+### 2. Select your repository
+
+Then, import the AstroWP GitHub repository.
+
+![image](https://github.com/astrowp/docs/assets/170225022/c8e68d49-85ff-44e2-9eb8-7341966ff55f)
+
+### 3. Configure the build
+
+Go through the settings. DigitalOcean will auto-detect the correct settings automatically.
+
+Give it a name, and choose the **Static Site** resource type.
+
+![image](https://github.com/astrowp/docs/assets/170225022/16e091f5-e240-4f4b-8c5e-ad6171e35e56)
+
+![image](https://github.com/astrowp/docs/assets/170225022/544e657e-8bf8-4dbc-820d-cd2b104c374f)
+
+![image](https://github.com/astrowp/docs/assets/170225022/d2d34901-9b95-4a48-b56d-925cab2da37a)
+
+and review the settings.
+
+### 4. Deploy the site
+
+Now click on the Deploy site button and wait for the deployment to finish.
+
+![image](https://github.com/astrowp/docs/assets/170225022/710bf354-7f95-49de-96a9-de54d76ec1d4)
+
+### 5. Add a domain
+
+Connect your custom domain, or you can continue using the temporary one.
+
+![image](https://github.com/astrowp/docs/assets/170225022/e56c5dc0-02ff-449c-bc36-8d27a0187d0b)
+
+### 6. Auto-Deploy Webhook
 
 Go to **Functions** in the left-side navigation, or visit https://cloud.digitalocean.com/functions
 
@@ -133,9 +170,11 @@ function main(args) {
 }
 ```
 
+Hit Save, and the Run.
+
 #### Get your APP ID here
 
-Go to the overview of your app page. Copy the App ID from the address bar.
+Go to the overview page of your ape. Copy the App ID from the address bar.
 
 ![image](https://github.com/astrowp/docs/assets/170225022/02e57e6a-fc6a-4f0c-8b7b-0605ff0050be)
 
