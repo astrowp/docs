@@ -29,7 +29,7 @@ This is the config file for connecting your Headless WordPress site. For more in
 
 - The ```API_URL``` variable is used to **connect your WordPress site**; it should be the full URL of where it is hosted e.g. https:<span>//</span>astrowp-demo.instawp.xyz
 
-- The ```site:url``` variable is used to **connect your published/deployed site** to canonical links, XML sitemap, etc., it should be the full URL e.g. https<span>://</span>astrowp.com
+- The ```site:url``` variable is used to **connect your [published/deployed site](deploy.md)** to canonical links, XML sitemap, etc., it should be the full URL e.g. https<span>://</span>astrowp.com
 
 - The ```post_types``` variable **registers ACF custom post types** used on the WordPress site.
 
