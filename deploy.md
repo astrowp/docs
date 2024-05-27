@@ -7,23 +7,55 @@ You can deploy your site to any hosting provider that supports Node.js, but for 
 - [Netlify](https://www.netlify.com/) - similar to Vercel, super-easy to get started with, start on the free tier, scale up to the $19/mo plan for more resources.
 - [Cloudflare Pages](https://pages.cloudflare.com/) - start on the free tier, scale up to the $20/mo plan for more resources.
 
-## Deploy to Vercel 
+## 1. Deploy to Vercel 
 
-Vercel is the easiest way to deploy.
+To host your AstroWP front-end site on Vercel, you first have to [create a free account](https://vercel.com/signup).
 
-### Setup a Vercel account
-
-To host your project on Vercel, you first have to [create a free account](https://vercel.com/signup).
-
-### Connect your git repository
-
-<img src="https://github.com/astrowp/docs/assets/170225022/01e00e82-2dcc-4d90-89a9-f35c4d577368" width="750" />
+### 1. Connect your git repository
 
 After signing up, you will be prompted to import a GitHub repository. Select the **GitHub provider** for your project and connect your GitHub account with Vercel.
 
+<img src="https://github.com/astrowp/docs/assets/170225022/01e00e82-2dcc-4d90-89a9-f35c4d577368" width="750" />
+
+### 2. Select your repository
+
 Now you will see a list of all your projects. Select the project you want to deploy and click on the **Import** button.
 
-## Deploy to Netlify
+<img src="https://github.com/astrowp/docs/assets/170225022/b0aa7dd0-4708-4a67-9699-3f83fc5b1054" width="750" />
+
+### 3. Configure the build
+
+After selecting the repository, you will be prompted to configure the build settings. In my experience, Vercel will auto-detect the correct settings. If not, you can configure them manually.
+
+<img src="https://github.com/astrowp/docs/assets/170225022/3510506f-c021-4134-9e6d-2e615fc2cac4" width="750" />
+
+### 4. Deploy the site
+
+Now click on the Deploy site button and wait for the deployment to finish.
+
+### 5. Create an Auto-deploy webhook
+
+You want to create a webhook that triggers a rebuild whenever your WordPress site is updated.
+
+Go to the **Settings** tab -> **Git** -> **Deploy Hooks**
+
+Give the webhook a name and choose main as the branch.
+
+<img src="https://github.com/astrowp/docs/assets/170225022/c227cf35-657e-439c-b403-1c89e2b978b3" width="750" />
+
+This is the webhook URL you need for configuring WordPress. Find out how to [configure the webhook in WordPress](webhooks.md).
+
+<img src="https://github.com/astrowp/docs/assets/170225022/c8fab11e-080a-485e-96b1-bdc9cc07db25" width="750" />
+
+### 6. Add a custom domain
+
+Connect your custom domain, or you can continue using the temporary one given to you.
+
+Go to the **Settings** tab -> **Domains** -> **Deploy Hooks**
+
+<img src="https://github.com/astrowp/docs/assets/170225022/e6725ee5-fb8c-4cef-9fcb-2eec5cee49a4" width="750" />
+
+## 2. Deploy to Netlify
 
 Before you start, make sure you have a Netlify account. If you don't have one yet, you can create one for free at [netlify.com](https://netlify.com/).
 
@@ -83,7 +115,7 @@ With Netlify you can receive form submissions via Netlify in the dashboard. If y
 
 Simply add the Netlify attribute in the ```<form>``` tag to enable form detection, and you'll automatically receive form submissions in your Netlify dashboard. [Learn more about Netlify forms here](https://docs.netlify.com/forms/setup/).
 
-## Deploy to Digital Ocean App Platform
+## 3. Deploy to Digital Ocean
 
 ### 1. Create an account
 
