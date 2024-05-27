@@ -2,10 +2,10 @@
 
 You can deploy your site to any hosting provider that supports Node.js, but for the best experience, I recommend using **Vercel**.
 
-- [Vercel](https://vercel.com/home)
-- [Netlify](https://www.netlify.com/)
-- [DigitalOcean](https://www.digitalocean.com/pricing/app-platform)
-- [Cloudflare Pages](https://pages.cloudflare.com/)
+- [Vercel](https://vercel.com/home) - start on the free tier, , scale up to the $20/mo for more resources
+- [DigitalOcean App Platform](https://www.digitalocean.com/pricing/app-platform) - start on the free tier, scale up to the $5/mo for more resources
+- [Netlify](https://www.netlify.com/) - similar to Vercel, super-easy to get started with
+- [Cloudflare Pages](https://pages.cloudflare.com/) - start on the free tier
 
 ## Deploy to Vercel 
 
@@ -55,7 +55,7 @@ Now click on the Deploy site button and wait for the deployment to finish. After
 
 ### 5. Auto-deploy webhook
 
-You want to create a webhook that triggers a re-build whenever your WordPress site is updated.
+You want to create a webhook that triggers a rebuild whenever your WordPress site is updated.
 
 Go to **Site configuration -> Build & deploy -> Build hooks**
 
@@ -80,3 +80,76 @@ With Netlify you can receive form submissions via Netlify in the dashboard. If y
 ```
 
 Simply add the Netlify attribute in the ```<form>``` tag to enable form detection, and you'll automatically receive form submissions in your Netlify dashboard. [Learn more about Netlify forms here](https://docs.netlify.com/forms/setup/).
+
+## Deploy to Digital Ocean App Platform
+
+
+### Auto-Deploy Webhook
+
+Go to **Functions** in the left-side navigation, or visit https://cloud.digitalocean.com/functions
+
+Create a Namespace and datacenter region
+
+Create a Function, and give it a name
+
+![image](https://github.com/astrowp/docs/assets/170225022/2cfa6141-e1d3-48a5-83d8-fe179ea6c384)
+
+In the **Source** window, paste in:
+
+```
+function main(args) {
+  const https = require('https');
+  const data = JSON.stringify({"force_build": true});
+  const appId = 'YOUR-APP-ID-HERE'; // Replace with your App ID
+  const token = 'YOUR-API-TOKEN-HERE'; // Replace with your DigitalOcean API token
+
+  const options = {
+    hostname: 'api.digitalocean.com',
+    port: 443,
+    path: '/v2/apps/' + appId + '/deployments',
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer ' + token,
+      'Content-Type': 'application/json',
+      'Content-Length': data.length
+    }
+  };
+
+  const req = https.request(options, function(res) {
+    console.log("statusCode: ", res.statusCode);
+    console.log("headers: ", res.headers);
+
+    res.on('data', function(d) {
+      process.stdout.write(d);
+    });
+  });
+
+  req.on('error', function(error) {
+    console.error(error);
+  });
+
+  req.write(data); // Write the request body
+  req.end();
+}
+```
+
+#### Get your APP ID here
+
+Go to the overview of your app page. Copy the App ID from the address bar.
+
+![image](https://github.com/astrowp/docs/assets/170225022/02e57e6a-fc6a-4f0c-8b7b-0605ff0050be)
+
+#### Get your API token here
+
+In the left-side navigation, go to **Applications & API**, then generate a new Token.
+
+![image](https://github.com/astrowp/docs/assets/170225022/d728cfe7-cf3a-4e9c-a3f0-34bb1efb6e19)
+
+- Give the token a name
+- Set the expiry date (I use no expire)
+- Choose Custom Scopes (for more granular permission)
+ - Select app
+- Click, Generate Token
+
+  
+
