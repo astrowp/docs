@@ -83,7 +83,7 @@ Edit this file, and replace **API_URL** with the WordPress server URL from the e
 
 ![Pasted image 20240517120623](https://github.com/astrowp/docs/assets/170225022/15ea9ec0-da2a-4b0e-a295-5c4080e92313)
 
-(you can leave the URL variable empty for now; this is the URL for your deployed site (e.g. https://astrowp.com), if you don't know what your deployed site's URL will be yet, then the URL for this variable can be added in later.)
+(you can leave the URL variable empty for now; this is the URL for your [deployed site](deploy.md) (e.g. https://astrowp.com), if you don't know what your deployed site's URL will be yet, then the URL for this variable can be added in later.)
 
 and then **Commit** the changes.
 
