@@ -1,6 +1,6 @@
 # Deployment
 
-You can deploy your site to any hosting provider that supports Node.js, but for the best and easiest user-experience, I recommend using **Vercel**.
+You can deploy your site to any hosting provider that supports Node.js, but for the best and easiest user experience, I recommend using Vercel.
 
 - [Vercel](https://vercel.com/home) - start on the free tier, scale up to the $20/mo plan for more resources.
 - [DigitalOcean App Platform](https://www.digitalocean.com/pricing/app-platform) - start on the free tier, scale up to the $5/mo plan for more resources.
@@ -11,7 +11,7 @@ You can deploy your site to any hosting provider that supports Node.js, but for 
 
 To host your AstroWP front-end site on Vercel, you first have to [create a free account](https://vercel.com/signup).
 
-### 1. Connect your git repository
+### 1. Connect the GitHub repository
 
 After signing up, you will be prompted to import a GitHub repository. Select the **GitHub provider** for your project and connect your GitHub account with Vercel.
 
@@ -61,7 +61,7 @@ Go to the **Settings** tab -> **Domains** -> **Deploy Hooks**
 
 Before you start, make sure you have a Netlify account. If you don't have one yet, you can create one for free at [netlify.com](https://netlify.com/).
 
-<img src="https://github.com/astrowp/docs/assets/170225022/4ed4bd37-de76-4ee6-98b9-6853a458e04a" width="750" />
+<img src="https://github.com/astrowp/docs/assets/170225022/4ed4bd37-de76-4ee6-98b9-6853a458e04a" />
 
 ### 1. Create a new project
    
