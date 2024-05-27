@@ -14,21 +14,21 @@ The free plan gives you 25 monthly credits, which translates to either 25,000 tr
 
 Go to the plugin and start the 3-step setup wizard.
 
-![image](https://github.com/astrowp/docs/assets/170225022/43df47a2-6cb2-4902-acdc-90db27258a5b)
+<img src="https://github.com/astrowp/docs/assets/170225022/43df47a2-6cb2-4902-acdc-90db27258a5b" width="750" />
 
 ## Get your API key
 
 Go to your Cloudinary dashboard, get your API key, and paste it in.
 
-![image](https://github.com/astrowp/docs/assets/170225022/4ead7293-6bdc-4698-bb82-8f2dfac761f6)
+<img src="https://github.com/astrowp/docs/assets/170225022/4ead7293-6bdc-4698-bb82-8f2dfac761f6" width="750" />
 
 ## Configure media library sync settings
 
 The plugin is ready out of the box, and the only consideration you should really make is whether you want to store media in WordPress, Cloudinary, or both (I recommend both).
 
-![image](https://github.com/astrowp/docs/assets/170225022/fd84d059-3f85-47be-bbc9-fd3b5c660fd8)
+<img src="https://github.com/astrowp/docs/assets/170225022/fd84d059-3f85-47be-bbc9-fd3b5c660fd8" width="750" />
 
-By default, all your media assets are stored in both WordPress and Cloudinary, which allows us to keep all assets in sync. If you're looking to reduce the size of your WordPress storage, you can adjust your storage settings accordingly. You'll find this setting under General Settings > Media Library Sync Settings from the plugin menu. At minimum, assets must be stored with Cloudinary to be delivered with all the benefits Cloudinary offers.
+By default, all your media assets are stored in both WordPress and Cloudinary, which allows us to keep all assets in sync. If you're looking to reduce the size of your WordPress storage, you can adjust your storage settings accordingly. You'll find this setting under **General Settings > Media Library Sync Settings** from the plugin menu. At a minimum, assets must be stored with Cloudinary to be delivered with all the benefits Cloudinary offers.
 
 The three options you can select are:
 
