@@ -53,7 +53,7 @@ Now click on the Deploy site button and wait for the deployment to finish.
 
 ![image](https://github.com/astrowp/docs/assets/170225022/25f7dbce-394d-4aba-993b-d8a6843c0e5d)
 
-### 5. Auto-deploy webhook
+### 5. Create an Auto-deploy webhook
 
 You want to create a webhook that triggers a rebuild whenever your WordPress site is updated.
 
@@ -62,6 +62,8 @@ Go to **Site configuration -> Build & deploy -> Build hooks**
 ![image](https://github.com/astrowp/docs/assets/170225022/78a4317e-2b33-442e-9a96-f3b0a36900dc)
 
 Give the webhook and name and save it.
+
+Find out how to [configure the webhook in WordPress](webhooks.md)
 
 ### 6. Add a custom domain
 
@@ -83,7 +85,7 @@ Simply add the Netlify attribute in the ```<form>``` tag to enable form detectio
 
 ## Deploy to Digital Ocean App Platform
 
-### .1 Create an account
+### 1. Create an account
 
 Go to DigitalOcean and [sign up for an account](https://www.digitalocean.com/products/app-platform).
 
@@ -121,17 +123,19 @@ Connect your custom domain, or you can continue using the temporary one.
 
 ![image](https://github.com/astrowp/docs/assets/170225022/e56c5dc0-02ff-449c-bc36-8d27a0187d0b)
 
-### 6. Auto-Deploy Webhook
+### 6. Create an Auto-deploy webhook
 
-Go to **Functions** in the left-side navigation, or visit https://cloud.digitalocean.com/functions
+This webhook will trigger a deployment on DigitalOcean and update the frontend, whenever a post is created or updated in your WordPress dashboard.
 
-Create a Namespace and datacenter region
+Go to **Functions** in the left-side navigation, or visit [https://cloud.digitalocean.com/functions](https://cloud.digitalocean.com/functions)
 
-Create a Function, and give it a name
+Create a **Namespace** and **datacenter region**.
+
+Create a **Function**, and give it a name.
 
 ![image](https://github.com/astrowp/docs/assets/170225022/2cfa6141-e1d3-48a5-83d8-fe179ea6c384)
 
-In the **Source** window, paste in:
+In the **Source** window, paste in this function:
 
 ```
 function main(args) {
@@ -170,7 +174,11 @@ function main(args) {
 }
 ```
 
-Hit Save, and the Run.
+Hit Save, and the hit Run.
+
+> Make of copy of the API token and the Source URL (webhook URL)
+
+![image](https://github.com/astrowp/docs/assets/170225022/03eab80a-eb4c-4c93-917c-96a735a7db78)
 
 #### Get your APP ID here
 
@@ -184,11 +192,10 @@ In the left-side navigation, go to **Applications & API**, then generate a new T
 
 ![image](https://github.com/astrowp/docs/assets/170225022/d728cfe7-cf3a-4e9c-a3f0-34bb1efb6e19)
 
-- Give the token a name
+- Give the API token a name
 - Set the expiry date (I use no expire)
-- Choose Custom Scopes (for more granular permission)
- - Select app
+- Choose Custom Scopes (for more granular permission levels)
+  - Select app
 - Click, Generate Token
 
-  
-
+Find out how to [configure the webhook in WordPress](webhooks.md)
