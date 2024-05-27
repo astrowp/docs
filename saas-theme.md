@@ -328,6 +328,8 @@ Then, edit the file ```layout.astro``` in ```src/layouts/layout.astro```, go to 
 
 Now your contact form is protected by Cloudflare Turnstile.
 
+> If you use Netlify to deploy your site, they can do form submissions for you. [Find out more here](https://docs.astrowp.com/#/deploy?id=_7-forms).
+
 ## Header and Footer Links
 
 ```
