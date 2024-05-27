@@ -1,17 +1,19 @@
 # Webhooks
 
-Here you'll learn how to configure the webhook. Whenever you publish or update content on WordPress, this webhook will trigger a deployment on Vercel/Netflify/DigitalOcean, and the frontend will be updated with the latest content updates, and other savings you have made on the WordPress site.
+Here, you will learn how to configure deployment webhooks.
 
-> It's important to know that certain actions **will not** trigger a deployment.
+Whenever you publish or update content on WordPress, **a webhook will trigger a deployment on Vercel/Netflify/DigitalOcean**, and the front end will be updated with the latest content updates, and other savings you have made on the WordPress site.
 
-| Examples of actions that **WON'T** trigger a deployment | Examples of actions that **WILL** trigger a deployment |
-| -------- | ------- |
-| - Creating a shortcode | - Publishing a post/page/custom post type |
-| - Activating/deactivating a plugin | - Updating a post/page/custom post type |
-| - Creating/deleting a new user | - Creating/deleting a category/tag/image to a post/page/custom post type |
-| - Creating an ACF metafield | - Creating/deleting SEO metadata for a post/page/custom post type |
+> It's important to know that certain WordPress actions **will not** trigger a deployment.
 
-> If you want to trigger a deployment on the frontend, you will have to update a post/page/custom post type, and then the webhook will kick in to force a deployment.
+| Examples of actions that **WILL NOT** trigger a deployment | Examples of actions that **WILL** trigger a deployment |
+| :-------- | :------- |
+| - Creating a shortcode | - Publishing a post/page/custom post type <tr></tr>|
+| - Activating/deactivating a plugin | - Updating a post/page/custom post type <tr></tr>|
+| - Creating/deleting a new user | - Creating/deleting a category/tag/image to a post/page/custom post type <tr></tr>|
+| - Creating an ACF metafield | - Creating/deleting SEO metadata for a post/page/custom post type <tr></tr>|
+
+> If you want to "force" trigger a deployment on the front end, you will have to update a post/page/custom post type, and then the webhook will kick in to force a deployment.
 
 ## Configure webhooks
 
@@ -27,11 +29,11 @@ Open the Vercel/Netlify webhook settings (the configuration is identical for Ver
 
 Click on the webhook.
 
-![image](https://github.com/astrowp/docs/assets/170225022/cc9e6b12-1697-4ac2-b609-27aad8cf093d)
+<img src="[https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260](https://github.com/astrowp/docs/assets/170225022/cc9e6b12-1697-4ac2-b609-27aad8cf093d)" width="750" />
 
 Configure the webhook.
 
-![image](https://github.com/astrowp/docs/assets/170225022/e4ebc18f-6d98-4ffa-b026-67af74f53c62)
+<img src="[https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260](https://github.com/astrowp/docs/assets/170225022/e4ebc18f-6d98-4ffa-b026-67af74f53c62)" width="750" />
 
 1. Paste in the Vercel/Netlify webhook URL.
 2. Hit save.
@@ -41,7 +43,7 @@ Configure the webhook.
 
 Open the DigitalOcean webhook settings (the configuration is very similar to Vercel and Netlify).
 
-![image](https://github.com/astrowp/docs/assets/170225022/a024afe2-70b6-4edc-b412-e8c901fddd86)
+<img src="[https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260](https://github.com/astrowp/docs/assets/170225022/a024afe2-70b6-4edc-b412-e8c901fddd86)" width="750" />
 
 1. Paste in the DigitalOcean webhook URL ([find out how to get it here](https://docs.astrowp.com/#/deploy?id=get-your-app-id-here)).
 2. Paste in the DigitalOcean API token. ([find out how to get it here](https://docs.astrowp.com/#/deploy?id=get-your-api-token-here))).
