@@ -2,7 +2,7 @@
 
 Here, you will learn how to configure deployment webhooks.
 
-Whenever you publish or update content on WordPress, **a webhook will trigger a deployment on Vercel/Netflify/DigitalOcean**, and the front end will be updated with the latest content updates, and other savings you have made on the WordPress site.
+Whenever you publish or update content on WordPress, **a webhook will trigger a deployment on Vercel/Netflify/DigitalOcean**, and the front end will be updated with the latest content updates and other savings you have made on your headless WordPress site.
 
 > It's important to know that certain WordPress actions **will not** trigger a deployment.
 
@@ -29,11 +29,11 @@ Open the Vercel/Netlify webhook settings (the configuration is identical for Ver
 
 Click on the webhook.
 
-<img src="[https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260](https://github.com/astrowp/docs/assets/170225022/cc9e6b12-1697-4ac2-b609-27aad8cf093d)" width="750" />
+<img src="https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260](https://github.com/astrowp/docs/assets/170225022/cc9e6b12-1697-4ac2-b609-27aad8cf093d" width="750" />
 
 Configure the webhook.
 
-<img src="[https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260](https://github.com/astrowp/docs/assets/170225022/e4ebc18f-6d98-4ffa-b026-67af74f53c62)" width="750" />
+<img src="https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260](https://github.com/astrowp/docs/assets/170225022/e4ebc18f-6d98-4ffa-b026-67af74f53c62" width="750" />
 
 1. Paste in the Vercel/Netlify webhook URL.
 2. Hit save.
@@ -43,7 +43,7 @@ Configure the webhook.
 
 Open the DigitalOcean webhook settings (the configuration is very similar to Vercel and Netlify).
 
-<img src="[https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260](https://github.com/astrowp/docs/assets/170225022/a024afe2-70b6-4edc-b412-e8c901fddd86)" width="750" />
+<img src="https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260](https://github.com/astrowp/docs/assets/170225022/a024afe2-70b6-4edc-b412-e8c901fddd86" width="750" />
 
 1. Paste in the DigitalOcean webhook URL ([find out how to get it here](https://docs.astrowp.com/#/deploy?id=get-your-app-id-here)).
 2. Paste in the DigitalOcean API token. ([find out how to get it here](https://docs.astrowp.com/#/deploy?id=get-your-api-token-here))).
