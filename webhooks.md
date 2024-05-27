@@ -8,10 +8,10 @@ Whenever you publish or update content on WordPress, **a webhook will trigger a 
 
 | Examples of actions that **WILL NOT** trigger a deployment | Examples of actions that **WILL** trigger a deployment |
 | :-------- | :------- |
-| - Creating a shortcode | - Publishing a post/page/custom post type <tr></tr>|
-| - Activating/deactivating a plugin | - Updating a post/page/custom post type <tr></tr>|
-| - Creating/deleting a new user | - Creating/deleting a category/tag/image to a post/page/custom post type <tr></tr>|
-| - Creating an ACF metafield | - Creating/deleting SEO metadata for a post/page/custom post type <tr></tr>|
+| - Creating a shortcode | - Publishing a post/page/custom post type |<tr></tr>
+| - Activating/deactivating a plugin | - Updating a post/page/custom post type |<tr></tr>
+| - Creating/deleting a new user | - Creating/deleting a category/tag/image to a post/page/custom post type |<tr></tr>
+| - Creating an ACF metafield | - Creating/deleting SEO metadata for a post/page/custom post type |<tr></tr>
 
 > If you want to "force" trigger a deployment on the front end, you will have to update a post/page/custom post type, and then the webhook will kick in to force a deployment.
 
