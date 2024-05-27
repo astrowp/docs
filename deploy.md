@@ -33,6 +33,8 @@ After selecting the repository, you will be prompted to configure the build sett
 
 Now click on the Deploy site button and wait for the deployment to finish.
 
+<img src="https://github.com/astrowp/docs/assets/170225022/e7413d5b-d50c-41c8-b218-bfcd8340de58" width="750" />
+
 ### 5. Create an Auto-deploy webhook
 
 You want to create a webhook that triggers a rebuild whenever your WordPress site is updated.
