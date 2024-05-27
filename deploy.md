@@ -79,8 +79,4 @@ With Netlify you can receive form submissions via Netlify in the dashboard. If y
 <form name="contact" method="POST" data-netlify="true">
 ```
 
-Simply add the Netlify attribute in the <form> tag to enable form detection, and you’ll automatically receive form submissions in your Netlify dashboard. 
-
-[Learn more here](https://docs.netlify.com/forms/setup/).
-
-
+Simply add the Netlify attribute in the ```<form>``` tag to enable form detection, and you'll automatically receive form submissions in your Netlify dashboard. [Learn more about Netlify forms here](https://docs.netlify.com/forms/setup/).
