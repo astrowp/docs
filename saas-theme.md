@@ -297,8 +297,6 @@ The pricing page.
 
 ### 7. contact.json
 
-#### 8. Contact Form
-
 To make the contact page's submission form to work, you need to create your free access key from [Web3 Forms](https://web3forms.com/). Then, you will receive all form submissions in your email inbox.
 
 Edit the file ```contactform.astro``` in ```/src/components/contactform.astro```, go to line 16 add your access key.
