@@ -2,7 +2,7 @@
 
 > You don't *have to* clone the AstroWP repository to your local machine. Technically, you could edit files and make commits directly on GitHub.
 
-**OR** you could use VS Code with the [GitHub Repositories extension ](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub). This extension lets you {edit and commit}(https://www.youtube.com/watch?v=uCDKpsIRLPc) to the GitHub repository directly from GitHub — no cloning or local repository required.
+**OR** you could use VS Code with the [GitHub Repositories extension](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub). This extension lets you [edit and commit](https://www.youtube.com/watch?v=uCDKpsIRLPc) to the GitHub repository directly from GitHub — no cloning or local repository required.
 
 **BUT** I recommend that you clone the repo and run it locally. *Why?* Because cloning the repository to your local computer makes it easier to add or remove files, and push combined commits, AND it lets you preview the site on localhost instead of having to deploy.
 
@@ -47,7 +47,7 @@ npm install
 npm run dev
 ```
 
-> If it all goes well, the project should now be up and working on http://localhost:4321/ *(it might be a different port to 4321)*
+> If it all goes well, the project should now be up and working on http<span>://</span>localhost:4321/ *(it might be a different port to 4321)*
 
 ## VSCode
 
@@ -59,7 +59,7 @@ These are the extensions I recommend:
 It provides language support for .astro files. This extension is powered by the Astro language server.
 
 [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub)
-It allows you to quickly browse, search, edit, and commit to any remote GitHub repository directly from within Visual Studio Code. Open any GitHub repository directly from GitHub — no cloning or local repository required.
+It allows you to quickly browse, search, edit, and commit to any remote GitHub repository directly from within Visual Studio Code. You can open any GitHub repository directly from GitHub — no cloning or local repository required.
 
 [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 It enhances the Tailwind development experience by providing Visual Studio Code users with advanced features such as autocomplete, syntax highlighting, and linting.
