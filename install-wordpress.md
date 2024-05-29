@@ -28,19 +28,23 @@ What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz
  - You can use the temporary domain provided by most web hosts or connect a custom domain; either works fine as long as the URL is static and doesn't change.
  - You don't need to get flashy hosting :) Remember, WordPress is only for the backend; it's completely decoupled from the static front end.
 
-2. Go ahead and install a blank WordPress site.
+2. Login to your web hosting company.
 
-3. In your WordPress dashboard, go to Plugins, and install and activate the free **All In One WP Migration plugin**. 
+3. Go ahead and install a blank WordPress site.
 
-4. Go to All In One WP Migration's import section and import the .wpress file (which you received when you signed up).
+4. In your WordPress dashboard, go to Plugins, and install and activate the free **All In One WP Migration plugin**. 
 
-5. After the import, you will get logged out, so log back in again using *username* and *password* as the login credentials.
+5. Go to All In One WP Migration's import section and import the .wpress file (which you received when you signed up).
 
-6. Create a new Administrator user and make a copy of the username and password (afterwards, you should delete the old admin user using *username* and *password*).
+6. After the import, you will get logged out, so log back in again using *username* and *password* as the login credentials.
+
+ ![login_form](https://github.com/astrowp/docs/assets/170225022/d458110a-c1e1-4393-9b95-519c537d09d7)
+
+7. Create a new Administrator user and make a copy of the username and password (afterwards, you should delete the old admin user using *username* and *password*).
 
 <img src="https://github.com/astrowp/docs/assets/170225022/301d1b2e-94e3-4eb6-b52e-e0d7f3e9e48e" width="750" />
 
-7. Create an Application Password. Go to ```Users > Edit user > Application Password```. Make a copy of this password (this is important, you will need this later!).
+8. Create an Application Password. Go to ```Users > Edit user > Application Password```. Make a copy of this password (this is important, you will need this later!).
 
 <img src="https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260" width="750" />
 
@@ -49,6 +53,8 @@ What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz
 - a WordPress URL (of  your WordPress site) *e.g. https://my-astrowp-project.instawp.xyz*
 - a WordPress Admin Username *e.g. Mathias*
 - a WordPress Application Password *e.g. ABCD 1234 EFGH 5678*
+
+Now it's time to connect your WordPress site to Astro.
 
 ## Edit .env.example
 
