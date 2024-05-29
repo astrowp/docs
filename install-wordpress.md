@@ -6,7 +6,7 @@ After purchasing the AstroWP starter kit, you will receive a ```.wpress``` file 
 
 > **This .wpress file comes pre-configured with all the plugins and settings for your Headless WordPress site to work.**
 
-You can use any web host you like, but I recommend the following web hosts:
+You can use any web host you like, but I recommend using one of the these web hosts:
 
 - [Hostinger](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=1036&source=astrowp)
 - [SiteGround](https://www.siteground.com/index.htm?afcode=cd053fc09a801013fd59695b1d137bbe)
@@ -17,34 +17,34 @@ What's the *easiest* option? Personally, I find [InstaWP](https://app.instawp.io
 
 What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=1036&source=astrowp).
 
-.. or you can host WordPress for free on your local machine using [LocalWP*](https://localwp.com/help-docs/getting-started/installing-local/)
+.. or you can host WordPress for free on your local machine using [LocalWP](https://localwp.com/help-docs/getting-started/installing-local/)
 
-*If you decide to go with LocalWP, then keep in mind that when deploying the site, your WordPress site will need to be exposed to the Internet i.e. deployed/hosted. This is something LocalWP isn't made to do - although if you are an advanced user, you can configure LocalWP to work with Ngrok or Cloudflare tunnels.*
+*If you decide to go with LocalWP, then keep in mind that when deploying the site, your WordPress site will need to be exposed to the Internet, i.e. deployed/hosted. This is something LocalWP isn't made to do - although if you are an advanced user, you can configure LocalWP to work with Ngrok or Cloudflare tunnels to be accessible on the web.*
 
 ### Step-by-Step Guide
 
 1. Sign up for hosting.
 
- - You can use the temporary domain provided by most web hosts, or you can connect a custom domain; either works fine.
+ - You can use the temporary domain provided by most web hosts or connect a custom domain; either works fine as long as the URL is static and doesn't change.
  - You don't need to get flashy hosting :) Remember, WordPress is only for the backend; it's completely decoupled from the static front end.
 
-2. Install a blank WordPress site.
+2. Go ahead and install a blank WordPress site.
 
 3. In your WordPress dashboard, go to Plugins, and install and activate the free **All In One WP Migration plugin**. 
 
-4. Go to All In One WP Migration's import section and import the .wpress file.
+4. Go to All In One WP Migration's import section and import the .wpress file (which you received when you signed up).
 
-5. You will be logged out, so log back in again using *username* and *password* as the login credentials.
+5. After the import, you will get logged out, so log back in again using *username* and *password* as the login credentials.
 
 6. Create a new Administrator user and make a copy of the username and password (afterwards, you should delete the old admin user using *username* and *password*).
 
 <img src="https://github.com/astrowp/docs/assets/170225022/301d1b2e-94e3-4eb6-b52e-e0d7f3e9e48e" width="750" />
 
-7. Create an Application Password. Go to ```Users > Edit user > Application Password```. Make a copy of this password (this is important, you will need it later!).
+7. Create an Application Password. Go to ```Users > Edit user > Application Password```. Make a copy of this password (this is important, you will need this later!).
 
 <img src="https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260" width="750" />
 
-> Now, you should have three things for moving forward:
+> Now, you should have three things to be able to move forward:
 
 - a WordPress URL (of  your WordPress site) *e.g. https://my-astrowp-project.instawp.xyz*
 - a WordPress Admin Username *e.g. Mathias*
@@ -52,11 +52,16 @@ What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz
 
 ## Edit .env.example
 
-In your GitHub repository, navigate to the ``.env.example `` file in the root folder. Click on the Pencil icon to edit this file.
+```
+├── src/
+|   └── .env.example
+```
+
+In your GitHub repository, navigate to the ``.env.example `` file in the root folder. Click on the Pencil icon and edit this file.
 
 ![Pasted image 20240517115903](https://github.com/astrowp/docs/assets/170225022/18e21dbd-ece5-423d-b471-44a53d6bceb1)
 
-Rename the ```.env.example``` file to ```.env``` and add the required environment variables from the earlier step.
+Rename the ```.env.example``` file to ```.env``` and add the required environment variables that you got in the earlier step.
 
 For example:
 
@@ -83,7 +88,7 @@ Edit this file, and replace **API_URL** with the WordPress server URL from the e
 
 ![Pasted image 20240517120623](https://github.com/astrowp/docs/assets/170225022/15ea9ec0-da2a-4b0e-a295-5c4080e92313)
 
-(you can leave the URL variable empty for now; this is the URL for your [deployed site](deploy.md) (e.g. https://astrowp.com), if you don't know what your deployed site's URL will be yet, then the URL for this variable can be added in later.)
+(you can leave the URL variable empty for now; this is the URL for your [deployed site](deploy.md) (e.g. https<span>://</span>astrowp.com), if you don't know what your deployed site's URL is yet, then the URL for this variable can be added in later.)
 
 and then **Commit** the changes.
 
