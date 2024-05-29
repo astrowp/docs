@@ -51,6 +51,10 @@ npm run dev
 
 ## VSCode
 
+<img src="https://github.com/astrowp/docs/assets/170225022/e7fec34c-87f9-4fd9-bdb8-247418e9a896" width="750px" />
+
+[Download VS Code here](https://code.visualstudio.com/download)
+
 Of course, you can use any IDE you like with this starter kit, but when used with Visual Studio Code and the suggested extensions, it will give you the best possible experience customizing your project.
 
 These are the extensions I recommend:
