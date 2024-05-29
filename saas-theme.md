@@ -512,3 +512,9 @@ Copy the path.
 ![image](https://github.com/astrowp/docs/assets/170225022/0eef8f6e-ee04-4776-84f5-6cea51bcd016)
 
 and add it in, as the "icon" variable:
+
+### Custom CSS
+
+If you want to include your own custom CSS, you add it in ```base.css```, in the ```/src/styles/base.css``` folder.
+
+
