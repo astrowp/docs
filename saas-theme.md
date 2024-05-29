@@ -1,12 +1,12 @@
 # AstroWP SaaS Theme
 
-The SaaS theme consists of a combination of Astro and WordPress pages. Here is everything you need to know about configuring and customizing the AstroWP SaaS theme.
+The SaaS theme consists of a combination of Astro and WordPress pages. Here is everything you need to know about configuring, customizing and styling the AstroWP SaaS theme.
 
 ## Config Files
 
 ```
  ── src
-    └── config
+    └── config/
         └── config.json
         └── theme.json
 ```
@@ -79,14 +79,14 @@ This is the config file for customizing the styles.
 
 - Customize the theme's **Font family** (if you prefer another font family like Poppins, simply change this to ```Poppins:wght@400;500;700```).
 
-- Customize the theme's **Font sizes** with Tailwind CSS syntax.
+- Customize the theme's **Font sizes** using Tailwind CSS syntax.
 
 ## Customize Components
 
 ```
  ── src
     └── config
-        └── pages
+        └── pages/
             └── compare-pricing.json
             └── cta.json
             └── faq.json
@@ -124,17 +124,17 @@ For example, the homepage hero section, the ```hero.json``` file.
 
 Customize the Call-to-action component.
 
-![image](https://github.com/astrowp/docs/assets/170225022/c0b6d22e-3a28-405c-84d0-be40d8ddc1b3)
+<img src="https://github.com/astrowp/docs/assets/170225022/c0b6d22e-3a28-405c-84d0-be40d8ddc1b3" width="750px" />
 
 ### 2. faq.json
 
-![image](https://github.com/astrowp/docs/assets/170225022/58ba14ba-c2e4-467b-abff-818ba34bcdc7)
+<img src="https://github.com/astrowp/docs/assets/170225022/58ba14ba-c2e4-467b-abff-818ba34bcdc7" width="750px" />
 
 Customize the FAQ component.
 
 ### 3. features.json
 
-![image](https://github.com/astrowp/docs/assets/170225022/f6682772-5cd3-4811-b423-e0d5c506d131)
+<img src="https://github.com/astrowp/docs/assets/170225022/f6682772-5cd3-4811-b423-e0d5c506d131" width="750px" />
 
 Customize the Features 3x2 grid component.
 
@@ -144,7 +144,7 @@ Head over to [Iconify](https://icon-sets.iconify.design/fluent/?category=General
 
 Icons are Fluent UI System Icons 24 Filled. Search for an icon:
 
-![image](https://github.com/astrowp/docs/assets/170225022/da74d996-911a-4dd2-94d1-564962a4d443)
+<img src="https://github.com/astrowp/docs/assets/170225022/da74d996-911a-4dd2-94d1-564962a4d443" width="750px" />
 
 Copy the path.
 
@@ -162,37 +162,37 @@ and add it in, as the "icon" variable:
 
 ### 4. feature-alt.json
 
-![image](https://github.com/astrowp/docs/assets/170225022/14430ff4-566f-4f87-84c4-6be29951e439)
+<img src="https://github.com/astrowp/docs/assets/170225022/14430ff4-566f-4f87-84c4-6be29951e439" width="750px" />
 
 Customize the Features hero component.
 
 ### 5. feature-grid.json
 
-![image](https://github.com/astrowp/docs/assets/170225022/eb826eb0-7730-4c51-b548-80b357d0504c)
+<img src="https://github.com/astrowp/docs/assets/170225022/eb826eb0-7730-4c51-b548-80b357d0504c" width="750px" />
 
 Customize the Features 2x3 images grid component.
 
 ### 6. footer.json
 
-![image](https://github.com/astrowp/docs/assets/170225022/3f90a350-8df6-41db-b9d0-cb71de8130f7)
+<img src="https://github.com/astrowp/docs/assets/170225022/3f90a350-8df6-41db-b9d0-cb71de8130f7" width="750px" />
 
-Customize the sitewide Footer, including the links, components.
+Customize the sitewide Footer, including the links.
 
 ### 7. header.json
 
-![image](https://github.com/astrowp/docs/assets/170225022/37df0e0c-0af7-454f-ba4e-9a145ad13172)
+<img src="https://github.com/astrowp/docs/assets/170225022/37df0e0c-0af7-454f-ba4e-9a145ad13172" width="750px" />
 
-Customize the sitewide Header, including the links, components.
+Customize the sitewide Header, including the links.
 
 ### 8. hero.json
 
-![image](https://github.com/astrowp/docs/assets/170225022/ee45bfb2-4956-4043-961a-2b849bbfdeb8)
+<img src="https://github.com/astrowp/docs/assets/170225022/ee45bfb2-4956-4043-961a-2b849bbfdeb8" width="750px" />
 
 Customize the homepage Hero component.
 
 ### 9. logos.json
 
-![image](https://github.com/astrowp/docs/assets/170225022/28a78144-7b05-472a-bd61-a5948d7988f4)
+<img src="https://github.com/astrowp/docs/assets/170225022/28a78144-7b05-472a-bd61-a5948d7988f4" width="750px" />
 
 Customize the Logos component.
 
@@ -216,19 +216,19 @@ Paste in the SVG for the new logo.
 
 ### 10. pricing.json
 
-![image](https://github.com/astrowp/docs/assets/170225022/1fce9017-4f72-456a-9879-9554ac0f40cd)
+<img src="https://github.com/astrowp/docs/assets/170225022/1fce9017-4f72-456a-9879-9554ac0f40cd" width="750px" />
 
-Customize the Pricing, first section, component.
+Customize the Pricing component, its first section.
 
 ### 11. compare-pricing.json
 
-![image](https://github.com/astrowp/docs/assets/170225022/73767b4d-accf-4ec8-a090-a581e8736a6e)
+<img src="https://github.com/astrowp/docs/assets/170225022/73767b4d-accf-4ec8-a090-a581e8736a6e" width="750px" />
 
 Customize the Pricing comparison table component.
 
 ### 12. testimonials.json
 
-![image](https://github.com/astrowp/docs/assets/170225022/0f934ac9-a6e2-4629-9dc3-84aee142bb86)
+<img src="https://github.com/astrowp/docs/assets/170225022/0f934ac9-a6e2-4629-9dc3-84aee142bb86" width="750px" />
 
 Customize the Client testimonials component.
 
@@ -237,7 +237,7 @@ Customize the Client testimonials component.
 ```
  ── src
     └── config
-        └── pages
+        └── pages/
             └── compare-pricing.json
             └── 404.json
             └── about.json
@@ -340,9 +340,9 @@ Now your contact form is protected by Cloudflare Turnstile.
 
 The header and footer links are in these files:
 
-- **footer.json** (Customize the sitewide Footer, including the links, and components)
+- **footer.json** (Customize the sitewide Footer, including the links and components)
 
-- **header.json** (Customize the sitewide Header, including the links, and components)
+- **header.json** (Customize the sitewide Header, including the links and components)
 
 Here, you can edit, add or delete links in the header and the footer.
 
@@ -505,7 +505,7 @@ Please note, that the favicon.svg and opengraph.jpg are saved in the ```public``
 
 Head over to [Iconify](https://icon-sets.iconify.design/fluent/?category=General). Icons are Fluent UI System Icons 24 Filled. Search for an icon:
 
-![image](https://github.com/astrowp/docs/assets/170225022/da74d996-911a-4dd2-94d1-564962a4d443)
+<img src="https://github.com/astrowp/docs/assets/170225022/da74d996-911a-4dd2-94d1-564962a4d443" width="750px" />
 
 Copy the path.
 
