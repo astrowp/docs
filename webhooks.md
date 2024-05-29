@@ -2,6 +2,8 @@
 
 Here, you will learn how to configure deployment webhooks.
 
+![what-is-deploy-webhook](https://github.com/astrowp/docs/assets/170225022/69bd358f-d1e7-4cda-b7fe-7f75809546ae)
+
 Whenever you publish or update content on WordPress, **a webhook will trigger a deployment on Vercel/Netflify/DigitalOcean**, and the front end will be updated with the latest content updates and other savings you have made on your headless WordPress site.
 
 > It's important to know that certain WordPress actions **will not** trigger a deployment.
