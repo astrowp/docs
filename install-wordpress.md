@@ -38,7 +38,7 @@ What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz
 
 6. After the import, you will get logged out, so log back in again using *username* and *password* as the login credentials.
 
- ![login_form](https://github.com/astrowp/docs/assets/170225022/d458110a-c1e1-4393-9b95-519c537d09d7)
+![login_form](https://github.com/astrowp/docs/assets/170225022/64ecd785-7fb9-428b-b7f1-a86600fb7309)
 
 7. Create a new Administrator user and make a copy of the username and password (afterwards, you should delete the old admin user using *username* and *password*).
 
