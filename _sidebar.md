@@ -7,7 +7,7 @@
   
 - Features
 
-  - [SEO (robots.txt, XML sitemaps)](seo.md)
+  - [SEO (Redirects, robots.txt, XML sitemaps)](seo.md)
   - [Google Analytics](google-analytics.md 'How to setup Google Analytics')
   - [Speed](speed.md)
 
