@@ -2,13 +2,13 @@
 
 ## Permanent 301 Redirects
 
-Static-generated sites with Astro use meta-refresh for redirects. You and I both know that this isn't great for SEO. 
+Static-generated sites created with Astro use meta-refresh for redirects. You and I both know that is **no bueno** when it comes to SEO. 
 
-There are several ways to set up proper permanent redirects, and the exact method depends on where you deploy/host AstroWP.
+There are several ways to set up SEO-friendly redirects, and the exact method depends on where you deploy/host AstroWP.
 
 ### Vercel Redirects
 
-The vercel.json configuration file lets you configure and override Vercel's default behavior from within your project, including the redirect settings.
+The vercel.json configuration file lets you configure and override Vercel's default behavior, including the redirect settings.
 
 Create a new file on the root folder for the repo called ```vercel.json```
 
@@ -80,7 +80,7 @@ For more information, see [Netlify's redirects documentation](https://docs.netli
 
 ### DigitalOcean Redirects
 
-Go to your project's app settings, and in **HTTP Routes Redirect**, you can create and configure redirects.
+In DigitalOcean's App Platform, go to your project's app settings, and in **HTTP Routes Redirect**, you can create and configure redirects.
 
 ![image](https://github.com/astrowp/docs/assets/170225022/710f46d6-2f82-4e86-a859-85d2e66e6650)
 
