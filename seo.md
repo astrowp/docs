@@ -114,14 +114,14 @@ The robots.txt file is in ```public/robots.txt```
 User-agent: *
 Allow: /
 
-Sitemap: https://headlesswp-saas-theme.vercel.app/sitemap-index.xml
+Sitemap: https://astrowp.com/sitemap-index.xml
 ```
 
 ## XML Sitemaps
 
 The sitemap is automatically generated, and it is exposed at https://**.**/sitemap-index.xml.
 
-Change the domain to the production domain in the ```Sitemap:``` directive, for it to be auto-discovered by search engines.
+Change the domain to the production domain in the ```Sitemap:``` directive, for the Sitemap to be auto-discovered by search engines.
 
 ```
 Sitemap: https://astrowp.vercel.app/sitemap-index.xml
