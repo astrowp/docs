@@ -6,7 +6,7 @@ Static-generated sites created with Astro use meta-refresh for redirects. You an
 
 There are several ways to set up SEO-friendly redirects, and the exact method depends on where you deploy/host your AstroWP project.
 
-### Vercel Redirects
+### Create Redirects in Vercel
 
 The vercel.json configuration file lets you configure and override Vercel's default behavior, including the redirect settings.
 
@@ -44,7 +44,7 @@ Create a new file on the root folder for the repo called ```vercel.json```
 
 For more information, see [Vercel's redirects documentation](https://vercel.com/docs/edge-network/redirects#static-redirects)
 
-### Netlify Redirects
+### Create Redirects in Netlify
 
 The netlify.toml file is a configuration file that specifies how Netlify builds and deploys your site, including redirects.
 
@@ -70,7 +70,6 @@ Create a new file on the root folder for the repo called ```netlify.toml```
   force = true
 ```
 
-
 - **from** is the case-sensitive path you want to redirect. Special characters must be url-encoded.
 
 - **to** is the URL or path you want to redirect to. Special characters must be url-encoded.
@@ -83,7 +82,7 @@ Create a new file on the root folder for the repo called ```netlify.toml```
 
 For more information, see [Netlify's redirects documentation](https://docs.netlify.com/configure-builds/file-based-configuration/#redirects)
 
-### DigitalOcean Redirects
+### Create Redirects in DigitalOcean
 
 In DigitalOcean's App Platform, go to your project's app settings, and in **HTTP Routes Redirect**, you can create and configure redirects.
 
@@ -122,7 +121,7 @@ Sitemap: https://headlesswp-saas-theme.vercel.app/sitemap-0.xml
 
 The sitemap is automatically generated, and it is exposed at https://**.**/sitemap-index.xml.
 
-Change the domain to the production domain in ```public/robots.txt```:
+Change the domain to the production domain in the ```Sitemap:`` directive.
 
 ```
 Sitemap: https://astrowp.vercel.app/sitemap-index.xml
