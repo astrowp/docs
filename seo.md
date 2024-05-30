@@ -34,9 +34,11 @@ Create a new file on the root folder for the repo called ```vercel.json```
 }
 ```
 
-- **source** is the case-sensitive path you want to redirect
-- **destination** is the URL or path you want to redirect to
-- **permanent property** is a boolean that toggles between permanent and temporary redirect (default true). When true, the status code is 308 (permanent). When false, it is 307 (temporary).
+- **source** is the case-sensitive path you want to redirect.
+
+- **destination** is the URL or path you want to redirect to.
+
+- **permanent property** is a boolean that toggles between permanent and temporary redirect (default true). When true, the status code is 308 (permanent); when false, it is 307 (temporary).
 
 > Your AstroWP project must be [deployed to Vercel](deploy.md) for this to work.
 
@@ -70,8 +72,11 @@ Create a new file on the root folder for the repo called ```netlify.toml```
 
 
 - **from** is the case-sensitive path you want to redirect. Special characters must be url-encoded.
+
 - **to** is the URL or path you want to redirect to. Special characters must be url-encoded.
+
 - **status** is the HTTP status code you want to use in that redirect; 301 by default.
+
 - **force** is whether to override any existing content in the path or not.
 
 > Your AstroWP project must be [deployed to Netflify](deploy.md) for this to work.
@@ -84,14 +89,41 @@ In DigitalOcean's App Platform, go to your project's app settings, and in **HTTP
 
 ![image](https://github.com/astrowp/docs/assets/170225022/710f46d6-2f82-4e86-a859-85d2e66e6650)
 
-- **Route Path**: The existing path to redirect traffic from
-- **Redirect URI**: The path of the destination domain to redirect traffic to
-- **Redirect Authority**: The destination domain to redirect traffic to. If left empty, the requesting authority is used
-- **Redirect Status Code**: The HTTP status code to return when redirecting the user. Valid values are 300, 301, 302, 303, 304, 307, and 308. If not specified, it defaults to 302 (temporary redirect)
-- **Redirect Port**: The port of the destination URI to which traffic should be sent. If not specified, the value is omitted from the request or used to send traffic to the port of the original request
-- **Redirect Scheme**: The URI scheme the redirect uses. Must either be HTTP or HTTPS. Defaults to HTTPS if not specified
+- **Route Path**: The existing path to redirect traffic from.
+
+- **Redirect URI**: The path of the destination domain to redirect traffic to.
+
+- **Redirect Authority**: The destination domain to redirect traffic to. If left empty, the requesting authority is used.
+
+- **Redirect Status Code**: The HTTP status code to return when redirecting the user. Valid values are 300, 301, 302, 303, 304, 307, and 308. If not specified, it defaults to 302 (temporary redirect).
+
+- **Redirect Port**: The port of the destination URI to which traffic should be sent. If not specified, the value is omitted from the request or used to send traffic to the port of the original request.
+
+- **Redirect Scheme**: The URI scheme the redirect uses. Must either be HTTP or HTTPS. Defaults to HTTPS if not specified.
+
 - In the example above, *https<span>://</span>starfish-app-6r6mv.ondigitalocean.app/glossary/what-is-wp/* is permanently "301" redirected to *https<span>://</span>starfish-app-6r6mv.ondigitalocean.app/glossary/what-is-wordpress/*
 
 > Your AstroWP project must be [deployed to DigitalOcean](deploy.md) for this to work.
 
 For more information, see [DigitalOcean's redirects documentation](https://docs.digitalocean.com/products/app-platform/how-to/url-rewrites/)
+
+## Robots.txt
+
+The robots.txt file is in ```public/robots.txt```
+
+```
+User-agent: *
+Allow: /
+
+Sitemap: https://headlesswp-saas-theme.vercel.app/sitemap-0.xml
+```
+
+## XML Sitemaps
+
+The sitemap is automatically generated, and it is exposed at https://**.**/sitemap-index.xml.
+
+Change the domain to the production domain in ```public/robots.txt```:
+
+```
+Sitemap: https://astrowp.vercel.app/sitemap-index.xml
+```
