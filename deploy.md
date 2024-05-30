@@ -3,8 +3,8 @@
 You can deploy your site to any hosting provider that supports Node.js, but for the best and easiest user experience, I recommend using Vercel.
 
 - [Vercel](https://vercel.com/home) - start on the free tier, scale up to the $20/mo plan for more resources.
-- [DigitalOcean App Platform](https://www.digitalocean.com/pricing/app-platform) - start on the free tier, scale up to the $5/mo plan for more resources.
 - [Netlify](https://www.netlify.com/) - similar to Vercel, super-easy to get started with, start on the free tier, scale up to the $19/mo plan for more resources.
+- [DigitalOcean App Platform](https://www.digitalocean.com/pricing/app-platform) - start on the free tier, scale up to the $5/mo plan for more resources.
 - [Cloudflare Pages](https://pages.cloudflare.com/) - start on the free tier, scale up to the $20/mo plan for more resources.
 
 ## 1. Deploy to Vercel 
@@ -57,6 +57,16 @@ Go to the **Settings** tab -> **Domains** -> **Deploy Hooks**
 
 <img src="https://github.com/astrowp/docs/assets/170225022/e6725ee5-fb8c-4cef-9fcb-2eec5cee49a4" width="750" />
 
+If your domain is registered with Cloudflare, then Cloudflare manages the DNS for your domain.
+
+To use Cloudflare as your DNS provider, follow the steps below:
+
+1. **Insert a DNS Record**. In your Cloudflare dashboard, create a CNAME record pointing your domain to cname.vercel-dns.com.
+
+2. **Disable the Cloudflare Proxy**. Make sure the Cloudflare proxy (orange cloud icon) is turned off for the CNAME record, as it needs to be DNS-only (grey cloud icon).
+
+> You must disable the Cloudflare proxy if you want automatic deployments and [permanent redirects](seo.md) to work.
+
 ## 2. Deploy to Netlify
 
 Before you start, make sure you have a Netlify account. If you don't have one yet, you can create one for free at [netlify.com](https://netlify.com/).
@@ -104,6 +114,14 @@ Find out how to [configure the webhook in WordPress](webhooks.md)
 Connect your custom domain, or you can continue using the temporary one given to you.
 
 <img src="https://github.com/astrowp/docs/assets/170225022/8424ccce-4f2d-433b-a34c-bde40d6e4af2" width="750" />
+
+If your domain is registered with Cloudflare, then Cloudflare manages the DNS for your domain. To use Cloudflare as your DNS provider, follow the steps below:
+
+1. **Insert a DNS Record**. In your Cloudflare dashboard, create a CNAME record pointing to the alias Netlify provided.
+
+2. **Disable the Cloudflare Proxy**. Make sure the Cloudflare proxy (orange cloud icon) is turned off for the CNAME record, as it needs to be DNS-only (grey cloud icon).
+
+> You must disable the Cloudflare proxy if you want automatic deployments and [permanent redirects](seo.md) to work.
 
 ### 7. Forms
 
@@ -157,6 +175,14 @@ Now click on the Deploy site button and wait for the deployment to finish.
 Connect your custom domain, or you can continue using the temporary one.
 
 <img src="https://github.com/astrowp/docs/assets/170225022/e56c5dc0-02ff-449c-bc36-8d27a0187d0b" width="750" />
+
+If your domain is registered with Cloudflare, then Cloudflare manages the DNS for your domain. To use Cloudflare as your DNS provider, follow the steps below:
+
+1. **Insert a DNS Record**. In your Cloudflare dashboard, create a CNAME record pointing to the alias DigitalOcean provided.
+
+2. **Disable the Cloudflare Proxy**. Make sure the Cloudflare proxy (orange cloud icon) is turned off for the CNAME record, as it needs to be DNS-only (grey cloud icon).
+
+> You must disable the Cloudflare proxy if you want automatic deployments and [permanent redirects](seo.md) to work.
 
 ### 6. Create an Auto-deploy webhook
 
