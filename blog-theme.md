@@ -140,7 +140,7 @@ This is the config file for customizing the styles.
 
 - Customize the theme's **Font sizes** using Tailwind CSS syntax.
 
-## Customize Components
+## Customize the Footer
 
 ```
  ── src
@@ -172,7 +172,7 @@ Here is where you customize the footer.
 }
 ```
 
-## Customize Pages
+## Customize the Contact Page
 
 ```
  ── src
@@ -226,6 +226,10 @@ Then, edit the file ```/src/config/scripts.astro``` and add in this script tag:
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 ```
 
+Now, your contact form is protected by Cloudflare Turnstile.
+
+> If you use Netlify to deploy your site, they can do form submissions for you. [Find out more here](https://docs.astrowp.com/#/deploy?id=_7-forms).
+
 ## Create Posts and Pages
 
 This is handled in WordPress.
@@ -233,10 +237,3 @@ This is handled in WordPress.
 ## Images
 
 This is handled in WordPress.
-
-
-
-
-Now, your contact form is protected by Cloudflare Turnstile.
-
-> If you use Netlify to deploy your site, they can do form submissions for you. [Find out more here](https://docs.astrowp.com/#/deploy?id=_7-forms).
