@@ -113,7 +113,7 @@ This is the config file for customizing the styles.
 ```
  ── src
     └── config
-        └── pages/
+        └── components/
             └── compare-pricing.json
             └── cta.json
             └── faq.json
