@@ -8,11 +8,11 @@ The SaaS theme consists of a combination of Astro and WordPress pages. Here is e
  ── src
     └── config/
         └── config.json
-        └── scripts.json
+        └── scripts.astro
         └── theme.json
 ```
 
-The SaaS theme comes with three config files. The first one is for configuring the theme's connection to WordPress, the second one is for adding in js/css files, and the third one is for configuring the theme's styling.
+The SaaS theme comes with three config files. The first one configures the theme's connection to WordPress, the second adds custom js/css files, and the third configures the theme's styling.
 
 ### 1. config.json
 
@@ -42,12 +42,11 @@ To register multiple custom post types, you simply use this syntax:
 
 For more information on how to do WordPress custom fields and post types, see this [ACF](acf.md) tutorial.
 
-### 2. scripts.json
+### 2. scripts.astro
 
 This is the config file adding in scripts like [Google Analytics](google-analytics.md).
 
 ```
-<!-- Google Analytics tracking code configured for Astro - Replace G-XXXXXXXXXX in line 7 and 19 with your own ID -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script is:inline>
   window.dataLayer = window.dataLayer || [];
@@ -360,13 +359,13 @@ Before the closing </form> tag, add in *<div class="cf-turnstile mt-8" data-site
 </form>
 ```
 
-Then, edit the file ```layout.astro``` in ```src/layouts/layout.astro```, go to line 91 add in this script tag
+Then, edit the file ```/src/config/scripts.astro``` and add in this script tag:
 
 ```
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 ```
 
-Now your contact form is protected by Cloudflare Turnstile.
+Now, your contact form is protected by Cloudflare Turnstile.
 
 > If you use Netlify to deploy your site, they can do form submissions for you. [Find out more here](https://docs.astrowp.com/#/deploy?id=_7-forms).
 
