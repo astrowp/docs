@@ -230,6 +230,10 @@ Now, your contact form is protected by Cloudflare Turnstile.
 
 > If you use Netlify to deploy your site, they can do form submissions for you. [Find out more here](https://docs.astrowp.com/#/deploy?id=_7-forms).
 
+## Customizing the Logo
+
+src/components/header/navbar.astro
+
 ## Create Posts and Pages
 
 This is handled in WordPress.
