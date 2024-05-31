@@ -184,6 +184,20 @@ Customize the sitewide Footer, including the links.
 
 Customize the sitewide Header, including the links.
 
+If you want to create a dropdown menu in the header navigation, then you use this code:
+
+```
+{
+      "title": "Blog",
+      "path": "#",
+      "children": [
+        { "title": "Blog", "path": "/blog/" },
+        { "title": "Category: Astro", "path": "/blog/category/astro/" },
+        { "title": "Category: WordPress", "path": "/blog/category/wordpress/" }
+      ]
+    },
+```
+
 ### 8. hero.json
 
 <img src="https://github.com/astrowp/docs/assets/170225022/ee45bfb2-4956-4043-961a-2b849bbfdeb8" width="750px" />
