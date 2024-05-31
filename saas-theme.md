@@ -66,7 +66,7 @@ This is the config file adding in scripts like [Google Analytics](google-analyti
 </script>
 ```
 
-The code you add in here gets added before the closing ```</head>``` tag.
+The custom code you add in here gets added before the closing ```</head>``` tag.
 
 ### 3. theme.json
 
@@ -90,7 +90,7 @@ This is the config file for customizing the styles.
       "sm": ["0.875rem", "1.25rem"],
       "base": ["1rem", "1.5rem"],
       "lg": ["1.125rem", "1.75rem"],
-      "xl": ["1.25rem", "1.75rem"],
+      "xl": ["1.35rem", "1.85rem"],
       "2xl": ["1.5rem", "2rem"],
       "3xl": ["1.875rem", "2.25rem"],
       "4xl": ["2.25rem", "2.5rem"],
@@ -292,7 +292,7 @@ Customize the Client testimonials component.
             └── theme.json
 ```
 
-Here is where you **update the SEO page title, meta description, and content** for the pages. 
+Here is where you **update the SEO page title, meta description, noindex and content** for the pages. 
 
 For example the contact page, the ```contact.json``` file.
 
@@ -300,6 +300,7 @@ For example the contact page, the ```contact.json``` file.
 {
   "meta_title": "Contact Us",
   "meta_description": "Contact Us Meta Description",
+  "noindex": false,
   "title": "Contact",
   "description": "Have a Question? We Want To Hear From You!",
   "details": {
@@ -314,27 +315,27 @@ For example the contact page, the ```contact.json``` file.
 
 ### 1. 404.json
 
-The 404 error page.
+The 404 error page. Customize this page's SEO metadata and if it should be indexed or noindexed.
 
 ### 2. about.json
 
-The about page.
+The about page. Customize this page's SEO metadata and if it should be indexed or noindexed.
 
 ### 3. blog.json
 
-The blog index page.
+The blog index page. Customize this page's SEO metadata and if it should be indexed or noindexed.
 
 ### 4. features.json
 
-The features page.
+The features page. Customize this page's SEO metadata and if it should be indexed or noindexed.
 
 ### 5. home.json
 
-The homepage.
+The homepage. Customize this page's SEO metadata and if it should be indexed or noindexed.
 
 ### 6. pricing.json
 
-The pricing page.
+The pricing page. Customize this page's SEO metadata and if it should be indexed or noindexed.
 
 ### 7. contact.json
 
