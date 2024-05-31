@@ -6,9 +6,15 @@ Here is how you can integrate Google Analytics with Astro JS and ensure that eve
 
 Before proceeding, make sure you have a Google Analytics account and copy the G-XXXXXXXXXX tracking ID.
 
-## Edit /src/config/scripts.json
+## Edit /src/config/scripts.astro
 
-Go to ```/src/config/scripts.json``` edit this file, and simply paste in your tracking ID.
+```
+ ── src
+    └── config/
+        └── scripts.astro
+```
+
+Go to ```/src/config/scripts.astro``` edit this file, and simply paste in your tracking ID.
 
 ```
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> <----- HERE
