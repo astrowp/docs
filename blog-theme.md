@@ -209,7 +209,7 @@ Edit the file ```contactform.astro``` in ```/src/components/contactform.astro```
 
 I also recommend that you add spam protection to the form. [Cloudflare Turnstile](https://developers.cloudflare.com/turnstile/get-started/) is a great, free option for this.
 
-In line 61, before the closing </form> tag, add in *<div class="cf-turnstile mt-8" data-sitekey="TURNSTILE-SITE-KEY"></div>*
+In line 61, before the closing </form> tag, add in you SITE KEY *<div class="cf-turnstile mt-8" data-sitekey="TURNSTILE-SITE-KEY"></div>*
 
 ```
   <Button type="submit" size="lg" block>Send Message</Button>
