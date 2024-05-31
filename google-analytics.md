@@ -2,19 +2,16 @@
 
 Here is how you can integrate Google Analytics with Astro JS and ensure that events are sent on navigation.
 
-## Step 1: Get Your Google Analytics Tracking ID
+## Get Your Google Analytics Tracking ID
 
-Before proceeding, make sure you have a Google Analytics account and get  the tracking ID for your website.
+Before proceeding, make sure you have a Google Analytics account and copy the G-XXXXXXXXXX tracking ID.
 
-## Step 2: Copy the Following Code
+## Edit /src/config/scripts.json
 
-Copy this code.
+Go to ```/src/config/scripts.json``` edit this file, and simply paste in your tracking ID.
 
 ```
-<script 
-  async 
-  src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
-></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> <----- HERE
 <script is:inline>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -26,17 +23,13 @@ Copy this code.
     "astro:page-load",
     () => {
       gtag("js", new Date());
-      gtag("config", "G-XXXXXXXXXX");
+      gtag("config", "G-XXXXXXXXXX"); <----- AND HERE
     },
-    { once: false }
+    { once: false },
   );
 </script>
 ```
 
-## Step 3: Replace G-XXXXXXXXXX with Your Tracking ID
+**Replace G-XXXXXXXXXX** with your tracking ID.
 
-Replace "G-XXXXXXXXXX" in the code with your actual Google Analytics tracking ID.
-
-## Step 4. Paste into layout.astro
-
-Then, edit the file ```layout.astro``` in ```src/layouts/layout.astro```, go to line 91 add in the script tag.
+Then Commit changes.
