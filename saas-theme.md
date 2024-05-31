@@ -8,10 +8,11 @@ The SaaS theme consists of a combination of Astro and WordPress pages. Here is e
  ── src
     └── config/
         └── config.json
+        └── scripts.json
         └── theme.json
 ```
 
-The SaaS theme comes with two config files, one is for configuring the theme's connection to WordPress, and the other one is for styling.
+The SaaS theme comes with three config files. The first one is for configuring the theme's connection to WordPress, the second one is for adding in js/css files, and the third one is for configuring the theme's styling.
 
 ### 1. config.json
 
@@ -41,7 +42,34 @@ To register multiple custom post types, you simply use this syntax:
 
 For more information on how to do WordPress custom fields and post types, see this [ACF](acf.md) tutorial.
 
-### 2. theme.json
+### 2. scripts.json
+
+This is the config file adding in scripts like [Google Analytics](google-analytics.md).
+
+```
+<!-- Google Analytics tracking code configured for Astro - Replace G-XXXXXXXXXX in line 7 and 19 with your own ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+</script>
+<script is:inline>
+  document.addEventListener(
+    "astro:page-load",
+    () => {
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    },
+    { once: false },
+  );
+</script>
+```
+
+The code you add in here gets added before the closing ```</head>``` tag.
+
+### 3. theme.json
 
 This is the config file for customizing the styles.
 
