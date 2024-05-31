@@ -55,7 +55,7 @@ This is the config file for connecting your Headless WordPress site and for cust
 
 - The ```site:url``` variable is used to **connect your [published/deployed site](deploy.md)** to canonical links, XML sitemap, etc., it should be the full URL e.g. https<span>://</span>astrowp.com
 
-- The ``pages``` variable sets the header navigation links, to the left and to the right of the logo.
+- The ```pages``` variable sets the header navigation links, to the left and to the right of the logo.
 
 ### 2. scripts.astro
 
@@ -225,6 +225,17 @@ Then, edit the file ```/src/config/scripts.astro``` and add in this script tag:
 ```
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 ```
+
+## Create Posts and Pages
+
+This is handled in WordPress.
+
+## Images
+
+This is handled in WordPress.
+
+
+
 
 Now, your contact form is protected by Cloudflare Turnstile.
 
