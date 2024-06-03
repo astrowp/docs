@@ -4,7 +4,9 @@ Here is how you can integrate Google Analytics with Astro JS and ensure that eve
 
 ## Get Your Google Analytics Tracking ID
 
-Before proceeding, make sure you have a Google Analytics account and copy the G-XXXXXXXXXX tracking ID.
+Ensure you have a Google Analytics account.
+
+Copy your tracking ID (format: G-XXXXXXXXXX).
 
 ## Edit /src/config/scripts.astro
 
@@ -14,10 +16,16 @@ Before proceeding, make sure you have a Google Analytics account and copy the G-
         └── scripts.astro
 ```
 
-Go to ```/src/config/scripts.astro``` edit this file, and simply paste in your tracking ID.
+Navigate to your project’s src directory.
+
+Open the config folder.
+
+Find and edit the ```scripts.astro``` file:
+
+Add the following code to the scripts.astro file, **replacing G-XXXXXXXXXX** with your actual tracking ID:
 
 ```
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> <----- HERE
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script is:inline>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -29,13 +37,17 @@ Go to ```/src/config/scripts.astro``` edit this file, and simply paste in your t
     "astro:page-load",
     () => {
       gtag("js", new Date());
-      gtag("config", "G-XXXXXXXXXX"); <----- AND HERE
+      gtag("config", "G-XXXXXXXXXX");
     },
     { once: false },
   );
 </script>
 ```
 
-**Replace G-XXXXXXXXXX** with your tracking ID.
+**Replace G-XXXXXXXXXX** with your Google Analytics tracking ID.
 
-Then Commit changes.
+## Commit Your Changes
+
+Save the changes to scripts.astro.
+
+Commit the changes to your repository.
