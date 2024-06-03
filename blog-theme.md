@@ -207,6 +207,8 @@ Edit the file ```contactform.astro``` in ```/src/components/contactform.astro```
 <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
 ```
 
+> You'll also find step-by-step comments in the ```contactform.astro``` file
+
 I also recommend that you add spam protection to the form. [Cloudflare Turnstile](https://developers.cloudflare.com/turnstile/get-started/) is a great, free option for this.
 
 In line 61, before the closing </form> tag, add in you SITE KEY *<div class="cf-turnstile mt-8" data-sitekey="TURNSTILE-SITE-KEY"></div>*
@@ -230,7 +232,20 @@ Now, your contact form is protected by Cloudflare Turnstile.
 
 > If you use Netlify to deploy your site, they can do form submissions for you. [Find out more here](https://docs.astrowp.com/#/deploy?id=_7-forms).
 
-## Customizing the Logo
+## Customizing the Logo and Favicon
+
+The favicon.svg file is in the **/public/** folder
+
+Simply overwrite the favicon.svg with your own favicon.
+
+The logo is in the **/src/assets/** folder
+
+```
+logo.svg
+logo-dark.svg
+```
+
+
 
 src/components/header/navbar.astro
 
