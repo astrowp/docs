@@ -16,22 +16,23 @@ Create a new file on the root folder for the repo called ```vercel.json```
 {
   "redirects": [
     {
-        source: '/about',
-        destination: '/',
-        permanent: true,
-    }, 
-    { 
-      "source": "/glossary/what-is-wp/",
-      "destination": "/glossary/what-is-wordpress/", 
+      "source": "/about",
+      "destination": "/",
       "permanent": true
     },
-    { 
+    {
+      "source": "/glossary/what-is-wp/",
+      "destination": "/glossary/what-is-wordpress/",
+      "permanent": true
+    },
+    {
       "source": "/view-source/",
-      "destination": "https://github.com/vercel/vercel/", 
+      "destination": "https://github.com/vercel/vercel/",
       "permanent": true
     }
   ]
 }
+
 ```
 
 - **source** is the case-sensitive path you want to redirect.
