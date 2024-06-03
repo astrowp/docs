@@ -18,7 +18,7 @@
    - [Yoast plugin](yoast.md 'How to use the Yoast SEO WordPress plugin')
    - [ACF plugin](acf.md 'How to use the Advanced Custom Fields WordPress plugin')
    - [Cloudinary plugin](cloudinary.md 'How to setup the Cloudinary WordPress plugin')
-   - [Redirections plugin](redirections.md 'How to use the Redirections WordPress plugin')
+   - [Redirection plugin](redirection-plugin.md 'How to use the Redirections WordPress plugin')
 
 - Astro Customization
 
