@@ -8,17 +8,15 @@ When using the Redirecting plugin in Astro JS, it creates a meta redirect rather
 
 ## Adding A Redirect
 
-Use the ‘add new redirection’ form to create a new redirect.
+Use the "add new redirection" form to create a new redirect.
 
-![image](https://github.com/astrowp/docs/assets/170225022/5cc57504-e61c-4a6a-8ba5-8b3f10772ce3)
+<img src="https://github.com/astrowp/docs/assets/170225022/5cc57504-e61c-4a6a-8ba5-8b3f10772ce3" width="750px" />
 
 In its most basic form you need to enter a source URL (the URL you are redirecting from) and a target URL (the URL you are redirecting to).
 
-The source URL is generally relative to your site. This means, for example, if the URL you want to redirect from is https://myexample.com/old-url, and Redirection is installed on https://myexample.com then the source is /old-url – it is relative to your domain.
+The source URL is generally relative to your site. This means, for example, if the URL you want to redirect from is https<span>://</span>myexample.com/old-url, and Redirection is installed on https<span>://</span>myexample.com then the source is /old-url – it is relative to your domain.
 
 The target can be any URL, relative or otherwise.
-
-Some things to note:
 
 The source URL cannot contain a hash #. This is not sent to the server and it is not possible to match against it. This is a general web limitation and not one imposed by Redirection.
 
