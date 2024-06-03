@@ -1,6 +1,6 @@
 # AstroWP Blog Theme
 
-The SaaS blog is almost entirely made up of WordPress posts and pages and is managed in WordPress.
+The SaaS blog is almost entirely (except for the contact page) made up of WordPress posts and pages and is entirely managed in WordPress.
 
 Here is everything you need to know about configuring, customizing and styling the AstroWP blog/portfolio theme.
 
