@@ -30,21 +30,21 @@ This is the config file for connecting your Headless WordPress site and for cust
     "leftmenu": [
       {
         "title": "About",
-        "slug": "about"
+        "slug": "/about/"
       },
       {
         "title": "Archive",
-        "slug": "archive"
+        "slug": "/archive/"
       }
     ],
     "rightmenu": [
       {
         "title": "Contact",
-        "slug": "contact"
+        "slug": "/contact/"
       },
       {
         "title": "Privacy Policy",
-        "slug": "privacy-policy"
+        "slug": "/privacy-policy/"
       }
     ]
   }
