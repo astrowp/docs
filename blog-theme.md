@@ -1,6 +1,6 @@
 # AstroWP Blog Theme
 
-![opengraph](https://github.com/astrowp/docs/assets/170225022/97d175fa-4ea3-4b78-8fd4-0ecad82ce33e)
+![opengraph (1)](https://github.com/astrowp/docs/assets/170225022/cc006f33-e419-42e9-b887-6fee3dad1057)
 
 The Blog theme [(demo link here)](https://blog-theme-demo.astrowp.com/) is almost entirely (except for the contact page and the archive page) made up of WordPress posts and pages and is entirely managed in WordPress.
 
