@@ -1,5 +1,7 @@
 # AstroWP SaaS Theme
 
+![og-image](https://github.com/astrowp/docs/assets/170225022/1cd16edb-e7fd-42ff-ab45-f5255e17509d)
+
 The SaaS theme consists of a combination of Astro and WordPress pages. Here is everything you need to know about configuring, customizing and styling the AstroWP SaaS theme.
 
 ## Config Files
