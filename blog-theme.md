@@ -128,15 +128,15 @@ This is the config file for customizing the styles.
 }
 ```
 
-- Enable/disable the theme's **Dark mode**.
+- Enable/disable the theme's **Dark mode** (using boolean true or false).
 
-- Enable/disable **the floating sidebar** on blog posts.
+- Enable/disable **the floating sidebar** on blog posts (using boolean true or false).
 
 - Set the **category colour** for light mode and for dark mode.
 
 - Set the **underline from/to colour** for light mode and for dark mode.
 
-- Customize the theme's **Font family** (if you prefer another font family like Poppins, simply change this to ```Poppins:wght@400;500;700```).
+- Customize the theme's **Font family** (if you prefer another font family like Poppins, simply change this to ```Inter:wght@400;500;700```).
 
 - Customize the theme's **Font sizes** using Tailwind CSS syntax.
 
@@ -178,6 +178,7 @@ Here is where you customize the footer.
  ── src
     └── config/
         └── pages
+            └── archive.json
             └── contact.json
 ```
 
@@ -187,6 +188,7 @@ Here is where you customize the contact page.
 {
   "meta_title": "Contact Us Page",
   "meta_description": "Contact Us Meta Description",
+  "noindex": false, 
   "title": "Contact Us",
   "description": "Get in touch, we are a here to help.",
   "details": {
@@ -232,6 +234,28 @@ Now, your contact form is protected by Cloudflare Turnstile.
 
 > If you use Netlify to deploy your site, they can do form submissions for you. [Find out more here](https://docs.astrowp.com/#/deploy?id=_7-forms).
 
+## Customize the Archive Page
+
+```
+ ── src
+    └── config/
+        └── pages
+            └── archive.json
+            └── contact.json
+```
+
+Here is where you customize the archive/sitemap page.
+
+```
+{
+  "meta_title": "Archive",
+  "meta_description": "Archive Meta Description",
+  "noindex": false,
+  "title": "Archive",
+  "description": "See all blog posts we have published."
+}
+```
+
 ## Customizing the Logo and Favicon
 
 The favicon.svg file is in the **/public/** folder
@@ -245,14 +269,46 @@ logo.svg
 logo-dark.svg
 ```
 
+The logo has an aspect ratio of 16:9 (which matches the aspect ratio of 112px x 63px), you can start with any larger size that has the same aspect ratio. Here are a few common sizes that have a 16:9 aspect ratio:
 
+- 112px x 63px
+- 224px x 126px
+- 336px x 189px
+- 448px x 252px
+- 560px x 315px
 
-src/components/header/navbar.astro
+You can scale down any of these sizes proportionally to 112px x 63px without distorting the logo.
+
+Again, you can just overwrite the existing light- and dark logos.
+
+I personally use [Canva.com](https://canva.com/), it's a great design tool for creating and designing svg favicons and icons.
 
 ## Create Posts and Pages
 
-This is handled in WordPress.
+This is entirely handled in WordPress.
+
+Only published posts are shown. A post set to sticky will show at the top of the blog's "homepage." If there are multiple sticky posts, each will be styled the same and ordered from newest to oldest, followed by any unstickied posts. 
+
+I also recommend that you write a custom excerpt for the sticky post. This can be done in the blog posts's "post settings".
+
+![image](https://github.com/astrowp/docs/assets/170225022/b1f06bbe-661f-4c08-a047-9f501ef32e28)
+
+Pages support a range of Gutenberg blocks, like columns:
+
+<img src="https://github.com/astrowp/docs/assets/170225022/afd938e7-b861-4f4f-a1b2-59aff48f43bf" width="750px" />
+
+Remember, pages can't have the same slug as an existing Astro page, e.g. /contact/.
 
 ## Images
 
-This is handled in WordPress.
+This is entirely handled in WordPress. You can use the native media library or the pre-installed [Cloudinary integration](cloudinary.md) for handling media.
+
+## Create Author Avatars
+
+<img src="https://github.com/astrowp/docs/assets/170225022/abbff922-e916-4f00-9c93-5e2c1b59a3e1" width="750px" />
+
+Use the pre-installed Guest Author plugin to create:
+
+- Display name
+- Biographical info
+- Upload avatar image
