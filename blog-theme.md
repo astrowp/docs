@@ -2,7 +2,7 @@
 
 ![opengraph](https://github.com/astrowp/docs/assets/170225022/97d175fa-4ea3-4b78-8fd4-0ecad82ce33e)
 
-The SaaS blog theme is almost entirely (except for the contact page and the arhive) made up of WordPress posts and pages and is entirely managed in WordPress.
+The Blog theme [(demo link here)](https://blog-theme-demo.astrowp.com/) is almost entirely (except for the contact page and the archive page) made up of WordPress posts and pages and is entirely managed in WordPress.
 
 Here is everything you need to know about configuring, customizing and styling the AstroWP blog/portfolio theme.
 
@@ -307,9 +307,11 @@ This is entirely handled in WordPress. You can use the native media library or t
 
 ## Create Author Avatars
 
+Use the pre-installed Guest Author plugin to create authors and avatar images.
+
 <img src="https://github.com/astrowp/docs/assets/170225022/abbff922-e916-4f00-9c93-5e2c1b59a3e1" width="750px" />
 
-Use the pre-installed Guest Author plugin to create:
+Use it to create:
 
 - Display name
 - Biographical info
