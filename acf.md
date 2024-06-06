@@ -13,19 +13,19 @@ Create a new Meta Fields Group in ACF, and choose where to display the meta fiel
 Then you can insert a shortcode to display the meta field in posts, pages and custom post types (this works best for simple text-based values):
 
 ```
-Year founded: [acf field="founded" ]
+Year founded: [acf field="founded"]
 ```
 
 will display as: Year founded: **2020**
 
 ```
-CEO/founder: [acf field="CEO" ]
+CEO/founder: [acf field="CEO"]
 ```
 
 will display as: CEO/founder: **Fred Schott**
 
 ```
-Website: [acf field="website" ]
+Website: [acf field="website"]
 ```
 
 will display as: Website: **<span>www</span>.astro.build**
