@@ -221,8 +221,17 @@ function main(args) {
     console.log("statusCode: ", res.statusCode);
     console.log("headers: ", res.headers);
 
+    let responseBody = '';
     res.on('data', function(d) {
-      process.stdout.write(d);
+      responseBody += d;
+    });
+
+    res.on('end', function() {
+      console.log("Response Body: ", responseBody);
+      const responseJson = JSON.parse(responseBody);
+      if (res.statusCode !== 200) {
+        console.error("Error: ", responseJson.message);
+      }
     });
   });
 
