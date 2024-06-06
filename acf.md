@@ -14,21 +14,21 @@ Then you can insert a shortcode to display the meta field in posts, pages and cu
 
 ```
 Year founded: [acf field="founded"]
-```
 
-will display as: Year founded: **2020**
+will display as: Year founded: 2020
+```
 
 ```
 CEO/founder: [acf field="CEO"]
-```
 
-will display as: CEO/founder: **Fred Schott**
+will display as: CEO/founder: Fred Schott
+```
 
 ```
 Website: [acf field="website"]
-```
 
-will display as: Website: **<span>www</span>.astro.build**
+will display as: Website: www.astro.build
+```
 
 For a live example, [see this custom post type](https://saas-theme-demo.astrowp.com/glossary/what-is-astro/).
 
