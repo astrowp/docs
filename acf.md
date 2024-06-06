@@ -8,17 +8,27 @@ The AstroWP Saas Theme .wpress import files come pre-installed with the free ACF
 
 Create a new Meta Fields Group in ACF, and choose where to display the meta fields (in posts, pages, or custom post types).
 
-![image](https://github.com/astrowp/docs/assets/170225022/b8bfe0f1-00aa-49d7-8c17-7a7e09e6917d)
+<img src="https://github.com/astrowp/docs/assets/170225022/8c65468c-2ab6-4bf4-9d07-af90ed9fb10c" width="750px" />
 
-Then you can use the ACF shortcode (this only works for simple text-based values):
+Then you can insert a shortcode to display the meta field in posts, pages and custom post types (this only works for simple text-based values):
 
 ```
 Year founded: [acf field="founded" ]
+```
 
-CEO/founder: [acf field="ceo" ]
+will display: Year founded: **2020**
 
+```
+CEO/founder: [acf field="CEO" ]
+```
+
+will display: CEO/founder: **Fred Schott**
+
+```
 Website: [acf field="website" ]
 ```
+
+will display: Website: **www.astro.build**
 
 For a live example, [see this custom post type](https://saas-theme-demo.astrowp.com/glossary/what-is-astro/).
 
