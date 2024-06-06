@@ -2,33 +2,31 @@
 
 The AstroWP Saas Theme .wpress import files come pre-installed with the free ACF WordPress plugin.
 
+> Only the SaaS theme comes with ACF integration
+
 ## Custom Meta Fields
 
 Create a new Meta Fields Group in ACF, and choose where to display the meta fields (in posts, pages, or custom post types).
 
 ![image](https://github.com/astrowp/docs/assets/170225022/b8bfe0f1-00aa-49d7-8c17-7a7e09e6917d)
 
-Then you can use either the ACF shortcode (this only works for simple text-based values):
+Then you can use the ACF shortcode (this only works for simple text-based values):
 
 ```
-[acf field="discount"]
+Year founded: [acf field="founded" ]
+
+CEO/founder: [acf field="ceo" ]
+
+Website: [acf field="website" ]
 ```
 
-or [GenerateBlocks Dynamic Data](https://docs.generateblocks.com/article/dynamic-data-options-overview/) in a Headline block, and add the meta value in the dynamic data field settings.
-
-![image](https://github.com/astrowp/docs/assets/170225022/27c62be5-f8c8-4858-b9bd-0914db1ca598)
-
-Meta fields are displayed on the front end.
-
-![image](https://github.com/astrowp/docs/assets/170225022/201b61f4-276e-417c-96ec-ff853296c88c)
+For a live example, [see this custom post type](https://saas-theme-demo.astrowp.com/glossary/what-is-astro/).
 
 ## Custom Post Types
 
-
-
 ### Register Custom Post Types
 
-For custom post types to work, you have to register them in the config.json file.
+For custom post types to work, you have to first register them in the config.json file.
 
 #### config.json
 
@@ -65,3 +63,5 @@ To register multiple custom post types, you simply use this syntax:
 ```
 "post_types": ["Glossary", "Coupons", "Projects"]
 ```
+
+### Create Custom Post Types
