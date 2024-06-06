@@ -10,6 +10,10 @@ Create a new Meta Fields Group in ACF, and choose where to display the meta fiel
 
 <img src="https://github.com/astrowp/docs/assets/170225022/8c65468c-2ab6-4bf4-9d07-af90ed9fb10c" width="750px" />
 
+Meta fields will appear in the settings of the post/page where you add the information.
+
+![image](https://github.com/astrowp/docs/assets/170225022/c5a6cfd5-4469-4a9c-8498-a388a7071af9)
+
 Then you can insert a shortcode to display the meta field in posts, pages and custom post types (this works best for simple text-based values):
 
 ```
