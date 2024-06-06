@@ -80,6 +80,8 @@ WP_APPLICATION_PASSWORD=ABCD 1234 EFGH 5678
 
 and then **Commit** the changes.
 
+Alternatively, you can set up environment variables directly through the project settings in your deployment platform, such as Vercel, Netlify, or DigitalOcean.
+
 ## Edit config.json
 
 In your GitHub repository, open the ```config.json``` file (in ```/src/config/config.json```)
