@@ -2,10 +2,22 @@
 
 Let's face it — sometimes things break, and your code and deployment will have errors!
 
-[Revert a commit in GitHub Desktop](https://docs.github.com/en/desktop/managing-commits/reverting-a-commit-in-github-desktop)
-[Revert to a Vercel deployment](https://vercel.com/docs/deployments/managing-deployments#instant-rollback)
+GitHub's version control system, Git, allows you to track changes to your codebase over time. If you or someone else makes a change that introduces a bug or breaks the code, you can quickly revert to a previous, stable state, either through the web interface, the Desktop app, or the command line.
+
+- [Revert a commit in GitHub Desktop](https://docs.github.com/en/desktop/managing-commits/reverting-a-commit-in-github-desktop)
+- [Revert to a Vercel deployment](https://vercel.com/docs/deployments/managing-deployments#instant-rollback)
 
 ## ChatGPT
+
+When there are things I don't fully understand or when I run into things like deployment errors, I turn to [ChatGPT](https://chatgpt.com/) for help.
+
+For example.
+
+<img src="https://github.com/astrowp/docs/assets/170225022/0ebe5cc3-b347-44bb-8283-e07c6decfdff" width="750px" />
+
+I then copy the error and paste it into ChatGPT and ask for an explanation and a fix.
+
+<img src="https://github.com/astrowp/docs/assets/170225022/099a6ebd-7b6f-486b-9959-dec8c79f0c17" width="750px" />
 
 ## Offical Docs
 
