@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Let's face it — sometimes things break, and your code and deployment will break and have errors!
+Let's face it — sometimes things break, and your code and deployment will come back with errors!
 
 But don't worry...
 
@@ -13,8 +13,6 @@ GitHub's version control system, Git, allows you to track changes to your codeba
 
 When there are things I don't fully understand or when I run into things like deployment errors, I turn to [ChatGPT](https://chatgpt.com/) for help.
 
-I haven't tried it but there is also this [Astro Helper](https://chatgpt.com/g/g-rhdTzvxST-astro-helper) ChatGPT bot you can use for development and debugging issues.
-
 For example. I made changes to the tags template, committed the code, but the deployment failed 😭
 
 <img src="https://github.com/astrowp/docs/assets/170225022/0ebe5cc3-b347-44bb-8283-e07c6decfdff" width="750px" />
@@ -26,6 +24,8 @@ I then copied the error and pasted it into ChatGPT, asking for an explanation an
 And there was the solution: the tag parameter could not be empty; it must have a value.
 
 I updated the code, and it successfully deployed 😀
+
+I haven't tried it, but there is also this [Astro Helper](https://chatgpt.com/g/g-rhdTzvxST-astro-helper) ChatGPT bot you can use for development and debugging issues.
 
 ## Offical Docs
 
