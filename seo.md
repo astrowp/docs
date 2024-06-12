@@ -2,7 +2,7 @@
 
 ## Permanent 301 Redirects
 
-Static-generated sites created with Astro use meta-refresh for redirects. You and I both know that is **no bueno** when it comes to SEO. 
+Static-generated sites created with Astro use meta-refresh for redirects. You and I both know that this is **no bueno** when it comes to SEO. 
 
 There are several ways to set up SEO-friendly redirects, and the exact method depends on where you deploy/host your AstroWP project.
 
