@@ -31,5 +31,5 @@
  
 - Help
 
-  - Troubleshooting
-  - Helpful tools
+  - [Troubleshooting](troubleshooting.md)
+  - [Helpful tools](online-tools.md)
