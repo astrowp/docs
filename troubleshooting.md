@@ -1,6 +1,8 @@
 # Troubleshooting
 
-Let's face it — sometimes things break, and your code and deployment will have errors!
+Let's face it — sometimes things break, and your code and deployment will break and have errors!
+
+But don't worry...
 
 GitHub's version control system, Git, allows you to track changes to your codebase over time. If you or someone else makes a change that introduces a bug or breaks the code, you can quickly revert to a previous, stable state, either through the web interface, the Desktop app, or the command line.
 
@@ -13,11 +15,17 @@ When there are things I don't fully understand or when I run into things like de
 
 For example.
 
+This automatic deployment failed 😭
+
 <img src="https://github.com/astrowp/docs/assets/170225022/0ebe5cc3-b347-44bb-8283-e07c6decfdff" width="750px" />
 
-I then copy the error and paste it into ChatGPT and ask for an explanation and a fix.
+I then copied the error pasted it into ChatGPT, and asked for an explanation and a fix.
 
 <img src="https://github.com/astrowp/docs/assets/170225022/099a6ebd-7b6f-486b-9959-dec8c79f0c17" width="750px" />
+
+And there was the solution: the tag parameter could not be empty; it must have a value.
+
+I updated the code and it deployed successfully 😀
 
 ## Offical Docs
 
