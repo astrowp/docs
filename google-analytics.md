@@ -1,6 +1,6 @@
 # How to Install Google Analytics Tracking
 
-Here is how you can integrate Google Analytics with Astro JS and ensure that events are sent on navigation.
+Here is how you can integrate Google Analytics (or any other analytics tracking) with Astro JS and ensure that events are sent on navigation.
 
 ## Get Your Google Analytics Tracking ID
 
@@ -48,6 +48,6 @@ Add the following code to the scripts.astro file, **replacing G-XXXXXXXXXX** wit
 
 ## Commit Your Changes
 
-Save the changes to scripts.astro.
+Save the changes to scripts.astro file.
 
-Commit the changes to your repository.
+Commit the changes to the repository.
