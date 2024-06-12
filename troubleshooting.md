@@ -13,6 +13,8 @@ GitHub's version control system, Git, allows you to track changes to your codeba
 
 When there are things I don't fully understand or when I run into things like deployment errors, I turn to [ChatGPT](https://chatgpt.com/) for help.
 
+I haven't tried it but there is also this [Astro Helper](https://chatgpt.com/g/g-rhdTzvxST-astro-helper) ChatGPT bot you can use for development and debugging issues.
+
 For example. I made changes to the tags template, committed the code, but the deployment failed 😭
 
 <img src="https://github.com/astrowp/docs/assets/170225022/0ebe5cc3-b347-44bb-8283-e07c6decfdff" width="750px" />
@@ -44,7 +46,7 @@ If you want to learn more about Astro, here are links to tutorials:
 <li><a rel="nofollow" target="_blank" href="https://thevalleyofcode.com/astro">The Valley of Code - Astro</a> by Flavio Copes</li>
 <li><a rel="nofollow" target="_blank" href="https://www.youtube.com/watch?v=XoIHKO6AkoM">Astro Quick Start Course: Build an SSR Blog</a></li>
 <li><a rel="nofollow" target="_blank" href="https://www.youtube.com/watch?v=Gvr4WhgfP0w">How I created a movie application with Astro 3.x</a></li>
-<li><a rel="nofollow" target="_blank" href="https://www.youtube.com/watch?v=Fcw4c3wzm7I">You may not ACTUALLY understand Content Collections…</a></li>
+<li><a rel="nofollow" target="_blank" href="https://www.youtube.com/watch?v=Fcw4c3wzm7I">You may not ACTUALLY understand Content Collections</a></li>
 <li><a rel="nofollow" target="_blank" href="https://www.youtube.com/watch?v=OERqwLy_reA">Build a custom blog platform with Astro and Appwrite</a></li>
 <li><a rel="nofollow" target="_blank" href="https://www.youtube.com/watch?v=TwWvNK0yHjI">Astro JS Portfolio Crash Course</a></li>
 <li><a rel="nofollow" target="_blank" href="https://egghead.io/courses/build-a-full-stack-blog-with-astro-7ffcf9ec">Build a full stack blog with Astro</a></li>
