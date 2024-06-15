@@ -6,6 +6,8 @@ The Blog theme [(demo link here)](https://blog-theme-demo.astrowp.com/) is almos
 
 Here is everything you need to know about configuring, customizing and styling the AstroWP blog theme.
 
+> Before you start customizing this theme, make sure you have installed [installed and imported WordPress](install-wordpress.md)
+
 ## Config Files
 
 ```
