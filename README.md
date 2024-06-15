@@ -2,8 +2,8 @@
 
 After you purchase AstroWP you will get two things to get your Astro with Headless WordPress site up and running:
 
-1. An invite to the AstroWP GitHub repository.
-2. A headless WordPress import file.
+1. GitHub repository invites (all three themes - frontend).
+2. WordPress import files (all three themes - backend).
 
 But first things first.
 
