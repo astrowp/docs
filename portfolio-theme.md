@@ -171,7 +171,7 @@ This supports [markdown syntax](https://www.markdownguide.org/basic-syntax/).
 
 ## Customize the Footer
 
-In ```/src/config/components/footer.json`` you can customze the footer.
+In ```/src/config/components/footer.json``` you can customze the footer.
 
 ```
 {
@@ -211,3 +211,32 @@ In ```/src/config/components/header.json``` you can customize the header links.
 }
 
 ```
+
+## Customizing the Logo and Favicon
+
+The favicon.svg file is in the ```public``` folder. Simply overwrite the  existing favicon.svg with your own favicon.
+
+The logo is in the ```/public/assets/``` folder
+
+```
+logo.svg
+logo-dark.svg
+```
+
+Again, you can just overwrite the existing light- and dark logos.
+
+I personally use [Canva.com](https://canva.com/), it's a great design tool for creating and designing svg favicons and icons.
+
+## Create Posts and Pages
+
+This is entirely handled in WordPress.
+
+Only published posts are shown. You must assign posts to either the **/posts/** category or the **/projects/** category.
+
+## Images
+
+This is entirely handled in WordPress. You can use the native media library or the pre-installed [Cloudinary](cloudinary.md) integration for handling media.
+
+## Custom CSS
+
+If you want to include your own custom CSS, you add it to base.css, in the ```/src/styles/base.css``` folder.
