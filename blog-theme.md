@@ -4,7 +4,7 @@
 
 The Blog theme [(demo link here)](https://blog-theme-demo.astrowp.com/) is almost entirely (except for the contact page and the archive page) made up of WordPress posts and pages and is entirely managed in WordPress.
 
-Here is everything you need to know about configuring, customizing and styling the AstroWP blog/portfolio theme.
+Here is everything you need to know about configuring, customizing and styling the AstroWP blog theme.
 
 ## Config Files
 
@@ -316,3 +316,7 @@ Use it to create:
 - Display name
 - Biographical info
 - Upload avatar image
+
+## Custom CSS
+
+If you want to include your own custom CSS, you add it in base.css, in the ```src/styles/base.css``` folder.
