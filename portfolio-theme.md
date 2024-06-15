@@ -6,6 +6,8 @@ The Portfolio theme [(demo link here)](https://portfolio-theme-demo.astrowp.com/
 
 Here is everything you need to know about configuring, customizing and styling this theme.
 
+> Before you start customizing this theme, make sure you have installed [installed and imported WordPress](install-wordpress.md)
+
 ## Config Files
 
 ```
