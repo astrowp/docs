@@ -6,12 +6,12 @@
   
 - Features
 
-  - [SEO (Redirects, robots.txt, XML sitemaps)](seo.md)
+  - [SEO (Redirects, robots.txt, XML sitemaps)](seo.md 'Configuring the Astro theme for SEO')
   - [Google Analytics](google-analytics.md 'How to setup Google Analytics')
 
 - WordPress Customization
 
-   - [Customization](wordpress-customization.md)
+   - [Gutenberg Patterns](patterns.md 'How to work with Gutenberg Patterns')
    - [Webhooks](webhooks.md 'How to setup and customize Webhooks')
    - [Yoast plugin](yoast.md 'How to use the Yoast SEO WordPress plugin')
    - [ACF plugin](acf.md 'How to use the Advanced Custom Fields WordPress plugin')
