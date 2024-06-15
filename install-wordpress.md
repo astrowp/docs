@@ -84,7 +84,7 @@ Alternatively, you can set up environment variables directly through the project
 
 ## Edit config.json
 
-In your GitHub repository, open the ```config.json``` file (in ```/src/config/config.json```)
+In your GitHub repository, open the ```config.json``` file (in ```/src/config/config.json```). In the Portfolio theme, the config file is here ```src/config/config.ts```.
 
 ```
 ├── src/
