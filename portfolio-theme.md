@@ -2,7 +2,9 @@
 
 ![image](https://github.com/astrowp/docs/assets/170225022/abf30806-15af-44d5-858a-c0104ef70beb)
 
-The Portfolio theme [(demo link here)](https://portfolio-theme-demo.astrowp.com/) is created almost entirely with WordPress posts. Here is everything you need to know about configuring, customizing and styling this theme.
+The Portfolio theme [(demo link here)](https://portfolio-theme-demo.astrowp.com/) is created almost entirely with WordPress posts. Posts assigned in the /posts/ category will become *posts*, and posts assigned in /projects/ will become *projects*.
+
+Here is everything you need to know about configuring, customizing and styling this theme.
 
 ## Config Files
 
@@ -109,7 +111,6 @@ The custom code you add in here gets added before the closing </head> tag.
 
 This is the config file for customizing the styles.
 
-
 ```
 {
   "light-color-scheme": {
@@ -153,11 +154,12 @@ This is the config file for customizing the styles.
 
 ## Customize the Homepage
 
-In ```/src/config/pages/homepage.md``` you can customize the hompage content.
+In ```/src/config/pages/homepage.md``` you can customize the hompage content and profile image.
 
 ```
 ---
 heading: Hi, I'm Luke
+image: /assets/profile-image.png
 ---
 
 I'm **Luke Donovan**, a web developer at Acme Studios, dedicated to the realms of collaboration and artificial intelligence.
@@ -171,7 +173,7 @@ This supports [markdown syntax](https://www.markdownguide.org/basic-syntax/).
 
 ## Customize the Footer
 
-In ```/src/config/components/footer.json``` you can customze the footer.
+In ```/src/config/components/footer.json``` you can customize the footer.
 
 ```
 {
