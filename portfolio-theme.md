@@ -6,11 +6,13 @@ The Portfolio theme [(demo link here)](https://portfolio-theme-demo.astrowp.com/
 
 ## Config Files
 
+```
  ── src
     └── config/
         └── config.ts
         └── scripts.astro
         └── theme.json
+```
 
 The Portfolio theme comes with three config files. The first one configures the theme's connection to WordPress, the second adds custom js/css files, and the third configures the theme's styling.
 
