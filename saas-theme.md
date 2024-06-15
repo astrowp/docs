@@ -4,6 +4,8 @@
 
 The SaaS theme [(demo link here)](https://saas-theme-demo.astrowp.com/) consists of a combination of Astro and WordPress pages. Here is everything you need to know about configuring, customizing and styling the AstroWP SaaS theme.
 
+> Before you start customizing this theme, make sure you have installed [installed and imported WordPress](install-wordpress.md)
+
 ## Config Files
 
 ```
