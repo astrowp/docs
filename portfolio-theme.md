@@ -77,7 +77,7 @@ export const SOCIALS: SocialObjects = [
   },
 ```
 
-- The ```API_URL``` variable is used to connect your WordPress site; it should be the full URL of where it is hosted e.g. https://astrowp-portfolio-demo.instawp.xyz
+- The ```API_URL``` variable is used to connect your WordPress site; it should be the full URL of where it is hosted e.g. https<span>://</span>astrowp-portfolio-demo.instawp.xyz
 
 - The ```website``` variable is used to connect your [published/deployed](deploy.md) site to canonical links, XML sitemap, etc., it should be the full URL
 
