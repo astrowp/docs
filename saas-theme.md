@@ -282,7 +282,6 @@ Customize the Client testimonials component.
     └── config
         └── pages/
             └── compare-pricing.json
-            └── 404.json
             └── about.json
             └── blog.json
             └── features.json
@@ -315,31 +314,27 @@ For example the contact page, the ```contact.json``` file.
 }
 ```
 
-### 1. 404.json
-
-The 404 error page. Customize this page's SEO metadata and if it should be indexed or noindexed.
-
-### 2. about.json
+### 1. about.json
 
 The about page. Customize this page's SEO metadata and if it should be indexed or noindexed.
 
-### 3. blog.json
+### 2. blog.json
 
 The blog index page. Customize this page's SEO metadata and if it should be indexed or noindexed.
 
-### 4. features.json
+### 3. features.json
 
 The features page. Customize this page's SEO metadata and if it should be indexed or noindexed.
 
-### 5. home.json
+### 4. home.json
 
 The homepage. Customize this page's SEO metadata and if it should be indexed or noindexed.
 
-### 6. pricing.json
+### 5. pricing.json
 
 The pricing page. Customize this page's SEO metadata and if it should be indexed or noindexed.
 
-### 7. contact.json
+### 6. contact.json
 
 To make the contact page's submission form to work, you need to create your free access key from [Web3 Forms](https://web3forms.com/). Then, you will receive all form submissions in your email inbox.
 
@@ -557,7 +552,7 @@ Copy the path.
 
 and add it in, as the "icon" variable:
 
-### Custom CSS
+## Custom CSS
 
 If you want to include your own custom CSS, you add it in ```base.css```, in the ```/src/styles/base.css``` folder.
 
