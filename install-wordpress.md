@@ -38,6 +38,8 @@ What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz
 
 5. Go to All In One WP Migration's import section and import the .wpress file (which you received when you signed up).
 
+<img src="https://github.com/astrowp/docs/assets/170225022/9517e990-3d26-4990-babb-de9b28e5f47a" width="750" />
+
 6. After the import, you will get logged out, so log back in again using *username* and *password* as the login credentials.
 
 ![login_form](https://github.com/astrowp/docs/assets/170225022/64ecd785-7fb9-428b-b7f1-a86600fb7309)
