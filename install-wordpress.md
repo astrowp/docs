@@ -34,6 +34,8 @@ What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz
 
 4. In your WordPress dashboard, go to Plugins, and install and activate the free **All In One WP Migration plugin**. 
 
+<img src="https://github.com/astrowp/docs/assets/170225022/b07713f5-81f9-40af-8d13-4ec087d94df7" width="750" />
+
 5. Go to All In One WP Migration's import section and import the .wpress file (which you received when you signed up).
 
 6. After the import, you will get logged out, so log back in again using *username* and *password* as the login credentials.
