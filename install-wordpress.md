@@ -42,7 +42,7 @@ What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz
 
 6. After the import, you will get logged out, so log back in again using *admin* and *password* as the login credentials.
 
-![login_form](https://github.com/astrowp/docs/assets/170225022/64ecd785-7fb9-428b-b7f1-a86600fb7309)
+![image](https://github.com/astrowp/docs/assets/170225022/8434f930-b504-4267-b819-a0a9b7803294)
 
 > Login with **admin** and **password**
 
