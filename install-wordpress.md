@@ -2,7 +2,7 @@
 
 ## Install WordPress
 
-After purchasing the AstroWP starter kit, you will receive a ```.wpress``` file that you will use to import the Headless WordPress version onto your favourite web host.
+After purchasing the AstroWP starter kit, you will receive ```.wpress``` files that you will use to import the themes Headless WordPress versions onto your favourite web host.
 
 > **This .wpress file comes pre-configured with all the plugins and settings for your Headless WordPress site to work.**
 
@@ -84,7 +84,9 @@ Alternatively, you can set up environment variables directly through the project
 
 ## Edit config.json
 
-In your GitHub repository, open the ```config.json``` file (in ```/src/config/config.json```). In the Portfolio theme, the config file is here ```src/config/config.ts```.
+In your GitHub repository, open the ```config.json``` file (in ```/src/config/config.json```). 
+
+> In the Portfolio theme, the config file is located here ```src/config/config.ts```.
 
 ```
 ├── src/
@@ -99,5 +101,13 @@ Edit this file, and replace **API_URL** with the WordPress server URL from the e
 (you can leave the URL variable empty for now; this is the URL for your [deployed site](deploy.md) (e.g. https<span>://</span>astrowp.com), if you don't know what your deployed site's URL is yet, then the URL for this variable can be added in later.)
 
 and then **Commit** the changes.
+
+## Edit Faust Plugin
+
+Go to **Settings -> Faust** and replace the full URL to your headless front-end.
+
+![image](https://github.com/astrowp/docs/assets/170225022/78e6f968-d1bb-44c0-b51a-c2254e92868c)
+
+This is used to rewrite links to point to your front-end site.
 
 That's it! Your WordPress site is now connected to Astro.
