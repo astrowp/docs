@@ -107,3 +107,56 @@ To register multiple custom post types, you use this json syntax:
 
 First, go to **ACF -> Post Types -> Add new**
 
+<img src="https://github.com/astrowp/docs/assets/170225022/3da4bc22-e70f-446a-991b-21846a5f8e33" width="750px" />
+
+1. Give the Post Type a label
+
+> Use the same label for both plural and singular, i.e. **USE** glossary **DON'T USE** glossary/glossaries
+
+2. Add Taxonomies (category, tags, author)
+
+3. Make it Active
+
+4. Toggle on the Advanced Configuration
+
+#### Advanced Configuration
+
+**1. General Settings**
+
+<img src="https://github.com/astrowp/docs/assets/170225022/fc969858-c547-47d7-829f-1ad519b15c0b" width="750px" />
+
+Enable the features you want to use in the content editor.
+
+- Title
+- Editor
+- Featured Image
+- Author
+- Custom Fields
+
+**2. Labels and Visibility**
+
+You can leave the default settings for these.
+
+**3. URLs**
+
+<img src="https://github.com/astrowp/docs/assets/170225022/b1ab2183-e260-429f-b960-a00d92e6fa78" width="750px" />
+
+Toggle On **Pagination** and **Publicly Queryable**
+
+**4. Permissions**
+
+You can leave the default settings for this.
+
+**5. REST API**
+
+<img src="https://github.com/astrowp/docs/assets/170225022/e751dd0c-c36a-46ed-8a21-714895491ace" width="750px" />
+
+Toggle On **Show In REST API**
+
+**6. GraphQL**
+
+<img src="https://github.com/astrowp/docs/assets/170225022/fd621ec2-28b6-4195-9894-1c5576773c53" width="750px" />
+
+Toggle On **Show in GraphQL**
+
+Use the same label for the first step, just use one label, i.e. **USE** glossary **DON'T USE** glossary/glossaries
