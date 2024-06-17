@@ -111,7 +111,7 @@ First, go to **ACF -> Post Types -> Add new**
 
 1. Give the Post Type a label
 
-> Use the same label for both plural and singular, i.e. **USE** glossary **DON'T USE** glossary/glossaries
+> Use the same label for both plural and singular, just use one consistent label, either the plural **OR** singular, for example, **USE** coupons **DON'T USE** coupon/coupons
 
 2. Add Taxonomies (category, tags, author)
 
@@ -123,9 +123,9 @@ First, go to **ACF -> Post Types -> Add new**
 
 **1. General Settings**
 
-<img src="https://github.com/astrowp/docs/assets/170225022/fc969858-c547-47d7-829f-1ad519b15c0b" width="750px" />
+<img src="https://github.com/astrowp/docs/assets/170225022/7423feed-ceed-4f37-a0d2-fa9506c4379c" width="750px" />
 
-Enable the features you want to use in the content editor.
+Enable the features you want to appear in the content editor.
 
 - Title
 - Editor
@@ -135,7 +135,7 @@ Enable the features you want to use in the content editor.
 
 **2. Labels and Visibility**
 
-You can leave the default settings for these.
+You can leave the default settings.
 
 **3. URLs**
 
@@ -145,7 +145,7 @@ Toggle On **Pagination** and **Publicly Queryable**
 
 **4. Permissions**
 
-You can leave the default settings for this.
+You can leave the default settings.
 
 **5. REST API**
 
@@ -155,8 +155,8 @@ Toggle On **Show In REST API**
 
 **6. GraphQL**
 
-<img src="https://github.com/astrowp/docs/assets/170225022/fd621ec2-28b6-4195-9894-1c5576773c53" width="750px" />
+<img src="https://github.com/astrowp/docs/assets/170225022/6a8de90c-6d48-45de-ac38-7688bfe84b19" width="750px" />
 
 Toggle On **Show in GraphQL**
 
-Use the same label for the first step, just use one label, i.e. **USE** glossary **DON'T USE** glossary/glossaries
+Use the same label for the first step, just use one consistent label, either the plural **OR** singular, for example, **USE** coupons **DON'T USE** coupon/coupons
