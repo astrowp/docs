@@ -160,3 +160,7 @@ Toggle On **Show In REST API**
 Toggle On **Show in GraphQL**
 
 Use the same label for the first step, just use one consistent label, either the plural **OR** singular, for example, **USE** coupons **DON'T USE** coupon/coupons
+
+> This is the label you use in ```config.json``` when you [register the post type](https://docs.astrowp.com/#/acf?id=register-custom-post-types)
+
+When you are done, your custom post type will appear in the left-hand side menu in the WordPress editor, and you can start creating custom post types.
