@@ -63,7 +63,7 @@ Then, and importantly, in the settings **GraphQL**
 
 ## Custom Post Types
 
-In the [SaaS demo](https://saas-theme-demo.astrowp.com/) I have created a /glossary/ page that lists custom post types. If you want to use the same two-column Query Loop used on the page, you can copy the below and paste it into a page.
+In the SaaS theme demo, I created a [Glossary page](https://saas-theme-demo.astrowp.com/glossary/) that lists custom post types. If you want to use the same two-column Query Loop used on the page, you can copy the below and paste it into a page.
 
 ```
 <!-- wp:query {"queryId":42,"query":{"perPage":"15","pages":0,"offset":0,"postType":"glossary","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
