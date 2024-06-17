@@ -39,7 +39,7 @@ Website: [acf field="website"]
 
 will display as:
 
-> Website: www.astro.build
+> Website: <span>www.</span>astro.build
 
 For a live example, [see this custom post type](https://saas-theme-demo.astrowp.com/glossary/what-is-astro/).
 
