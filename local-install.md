@@ -37,15 +37,15 @@ git clone https://github.com/astrowp/headlesswp-saas-theme.git .
 
 *(Note: The dot . at the end ensures the repository is cloned into the current directory, avoiding the creation of a nested directory.)*
 
-4. Install dependencies.
+4. Install and update dependencies.
 
-```npm install
+```
 npm install
 ```
 
 5. Then fire up the local server.
 
-```npm run dev
+```
 npm run dev
 ```
 
