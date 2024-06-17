@@ -63,6 +63,26 @@ Then, and importantly, in the settings **GraphQL**
 
 ## Custom Post Types
 
+In the [SaaS demo](https://saas-theme-demo.astrowp.com/) I have created a page that lists custom post types.
+
+If you want to use the two-column Query Loop used on that page, you can copy the below and paste it into a page.
+
+```
+<!-- wp:query {"queryId":42,"query":{"perPage":"15","pages":0,"offset":0,"postType":"glossary","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":2}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"30px","left":"30px"}}},"layout":{"inherit":false}} -->
+<div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px"><!-- wp:post-title {"isLink":true} /-->
+
+<!-- wp:post-excerpt {"moreText":"Read more","excerptLength":10} /-->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query -->
+```
+
 ### Register Custom Post Types
 
 For custom post types to work, you have to first register them in the config.json file.
