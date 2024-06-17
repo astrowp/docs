@@ -41,6 +41,8 @@ Configure the webhook.
 2. Hit save.
 3. Toggle the webhook to publish.
 
+Learn how to get the [Vercel webhook URL](https://docs.astrowp.com/#/deploy?id=_5-create-an-auto-deploy-webhook) and the [Netflify webhook URL](https://docs.astrowp.com/#/deploy?id=_5-create-an-auto-deploy-webhook-1)
+
 ## DigitalOcean webhook
 
 Open the DigitalOcean webhook settings (the configuration is very similar to Vercel and Netlify).
