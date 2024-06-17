@@ -18,9 +18,10 @@ Then you can insert a shortcode to display the meta field in posts, pages and cu
 
 ```
 Year founded: [acf field="founded"]
-
-will display as: Year founded: 2020
 ```
+
+> will display as: **Year founded: 2020**
+
 
 ```
 CEO/founder: [acf field="CEO"]
@@ -37,6 +38,22 @@ will display as: Website: www.astro.build
 For a live example, [see this custom post type](https://saas-theme-demo.astrowp.com/glossary/what-is-astro/).
 
 ### Create Meta Fields
+
+First, go to **ACF -> Field Groups -> Add new**
+
+<img src="https://github.com/astrowp/docs/assets/170225022/e4595814-489a-4c59-825a-71a3ff57ad63" width="750px" />
+
+Give the field group a name and create fields.
+
+Then, in the settings **Location Rules**, decide where you want the meta fields to show (on posts, pages, or custom post types)
+
+<img src="https://github.com/astrowp/docs/assets/170225022/33743525-2092-4f45-bc34-3acfe9216ca9" width="750px" />
+
+Then, and importantly, in the settings **GraphQL**
+
+<img src="https://github.com/astrowp/docs/assets/170225022/ea480c24-6b9a-4929-afd2-38cf39543c06" width="750px" />
+
+**Toggle ON** Manually Set GraphQL Types for Field Group, and also **Toggle ALL** GraphQL Types to Show the Field Group On.
 
 ## Custom Post Types
 
