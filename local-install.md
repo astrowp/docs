@@ -4,7 +4,9 @@
 
 **OR** you could use VS Code with the [GitHub Repositories extension](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub). This extension lets you [edit and commit](https://www.youtube.com/watch?v=uCDKpsIRLPc) to the GitHub repository directly from GitHub — no cloning or local repository required.
 
-**BUT** I recommend that you clone the repo and run it locally. *Why?* Because cloning the repository to your local computer makes it easier to add or remove files, and push combined commits, AND it lets you preview the site on localhost instead of having to deploy.
+**BUT** I recommend that you clone the repo and run it locally.
+
+**Why?** Because cloning the repository to your local computer makes it easier to customize, add or remove files, and push combined commits, AND it lets you preview the staging/development site on localhost instead of having to deploy it each time.
 
 ### Prerequisites
 
