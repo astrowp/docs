@@ -63,9 +63,6 @@ Then, and importantly, in the settings **GraphQL**
 
 ## Custom Post Types
 
-First, go to **ACF -> Post Types -> Add new**
-
-
 ### Register Custom Post Types
 
 For custom post types to work, you have to first register them in the config.json file.
@@ -92,11 +89,11 @@ This is the config file for connecting your Headless WordPress site. For more in
 
 The ```API_URL variable``` is used to connect your WordPress site; it should be the full URL of where it is hosted e.g. https<span>://</span>astrowp-demo.instawp.xyz
 
-The ```site:url variable``` is used to connect your published/deployed site to canonical links, XML sitemap etc., it should be the full URL e.g. https://astrowp.com
+The ```site:url variable``` is used to connect your published/deployed site to canonical links, XML sitemap etc., it should be the full URL e.g. <span>https://</span>astrowp.com
 
 **The ```post_types variable``` registers ACF custom post types used on the WordPress site.**
 
-To register multiple custom post types, you simply use this syntax:
+To register multiple custom post types, you use this json syntax:
 
 ```
 "post_types": ["Glossary", "Coupons"]
@@ -107,3 +104,6 @@ To register multiple custom post types, you simply use this syntax:
 ```
 
 ### Create Custom Post Types
+
+First, go to **ACF -> Post Types -> Add new**
+
