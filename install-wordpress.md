@@ -46,11 +46,15 @@ What's the *cheapest* option? That's got to be [Hostinger](https://www.hostg.xyz
 
 > Login with **admin** and **password**
 
-7. Create a new Administrator user and make a copy of the username and password (afterwards, you should delete the old admin user using *admin* and *password*).
+7. Create a new Administrator user and make a copy of the username and password .
 
 <img src="https://github.com/astrowp/docs/assets/170225022/301d1b2e-94e3-4eb6-b52e-e0d7f3e9e48e" width="750" />
 
-8. Create an Application Password. Go to ```Users > Edit user > Application Password```. Make a copy of this password (this is important, you will need this later!).
+8. Log out and log back in again, as the new Admin user.
+
+You should now delete the old admin user using *admin* and *password*.
+
+9. Create an Application Password. Go to ```Users > Edit user > Application Password```. Make a copy of this password (this is important, you will need this later!).
 
 <img src="https://github.com/astrowp/docs/assets/170225022/f2cceb34-0220-4eb2-ba14-1f6182124260" width="750" />
 
