@@ -5,7 +5,7 @@ After you purchase AstroWP you will get two things to get your Astro with Headle
 1. GitHub repository invites (all three themes - frontend).
 2. WordPress import files (all three themes - backend).
 
-[![image](https://github.com/astrowp/docs/assets/170225022/00ddc24c-3095-481a-b34c-c6545d8d1b7c)](https://www.youtube.com/watch?v=yPT6GxgqzlA)
+[![image](https://github.com/astrowp/docs/assets/170225022/00ddc24c-3095-481a-b34c-c6545d8d1b7c)](https://youtu.be/HXmFSc-c8-c)
 
 ## Fork the Repository
 
