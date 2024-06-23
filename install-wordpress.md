@@ -112,12 +112,4 @@ Edit this file, and replace **API_URL** with the WordPress server URL from the e
 
 and then **Commit** the changes.
 
-## Edit Faust Plugin
-
-Go to **Settings -> Faust** and replace the full URL to your headless front-end.
-
-![image](https://github.com/astrowp/docs/assets/170225022/78e6f968-d1bb-44c0-b51a-c2254e92868c)
-
-This is used to rewrite links to point to your front-end site.
-
 That's it! Your WordPress site is now connected to Astro.
