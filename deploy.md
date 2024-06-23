@@ -269,3 +269,11 @@ In the left-side navigation, go to **Applications & API**, then generate a new T
 - Click, Generate Token
 
 Find out how to [configure the webhook in WordPress](webhooks.md)
+
+## Edit Faust Plugin
+
+Go to **Settings -> Faust** and replace the full URL to your headless front-end.
+
+![image](https://github.com/astrowp/docs/assets/170225022/78e6f968-d1bb-44c0-b51a-c2254e92868c)
+
+This is used to rewrite links to point to your front-end site.
