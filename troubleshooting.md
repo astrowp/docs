@@ -27,6 +27,16 @@ I updated the code, and it successfully deployed 😀
 
 I haven't tried it, but there is also this [Astro Helper](https://chatgpt.com/g/g-rhdTzvxST-astro-helper) ChatGPT bot you can use for development and debugging issues.
 
+## CodeGPT
+
+CodeGPT is a VSCode extension that acts as an AI-powered coding assistant.
+
+![296623325-619e296e-fa40-4034-a91c-37c55bddf7d8](https://github.com/astrowp/docs/assets/170225022/d5abbd87-de87-4f46-aa08-691f692e297f)
+
+It integrates various AI models from providers like OpenAI, Microsoft, Google, Mistral, Anthropic, Huggingface, Ollama to offer features such as code auto-completion, error-checking, code explanation, refactoring, documentation generation, bug detection, and unit testing.
+
+For more information, visit the [CodeGPT Visual Studio Marketplace page](https://marketplace.visualstudio.com/items?itemName=DanielSanMedium.dscodegpt).
+
 ## Offical Docs
 
 <img src="https://github.com/astrowp/docs/assets/170225022/2006d493-9803-4750-86cd-5b7940c337a3" width="750px" />
