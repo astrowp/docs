@@ -68,4 +68,10 @@ It provides language support for .astro files. This extension is powered by the 
 It allows you to quickly browse, search, edit, and commit to any remote GitHub repository directly from within Visual Studio Code. You can open any GitHub repository directly from GitHub — no cloning or local repository required.
 
 [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-It enhances the Tailwind development experience by providing Visual Studio Code users with advanced features such as autocomplete, syntax highlighting, and linting.
+It enhances the Tailwind development experience by providing Visual Studio Code users with advanced features such as autocomplete, syntax highlighting, and lining.
+
+[CodeGPT](https://marketplace.visualstudio.com/items?itemName=DanielSanMedium.dscodegpt) 
+It offers AI chat assistance, auto-completion, code explanation, error-checking, and much more. This extension also enables the use of various AI models from different providers, enhancing your coding experience.
+
+
+
