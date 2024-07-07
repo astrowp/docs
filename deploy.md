@@ -61,9 +61,9 @@ If your domain is registered with Cloudflare, then Cloudflare manages the DNS fo
 
 To use Cloudflare as your DNS provider, follow the steps below:
 
-1. **Insert a DNS Record**. In your Cloudflare dashboard, create a CNAME record pointing your domain to cname.vercel-dns.com.
+1. **Insert DNS Records**. In your Cloudflare dashboard, create an A and CNAME record.
 
-2. **Disable the Cloudflare Proxy**. Make sure the Cloudflare proxy (orange cloud icon) is turned off for the CNAME record, as it needs to be DNS-only (grey cloud icon).
+2. **Disable the Cloudflare Proxy**. Make sure the Cloudflare proxy (orange cloud icon) is turned off for the A and CNAME records, as it needs to be DNS-only (grey cloud icon).
 
 > You must disable the Cloudflare proxy if you want automatic deployments and [permanent redirects](seo.md) to work.
 
@@ -117,9 +117,9 @@ Connect your custom domain, or you can continue using the temporary one given to
 
 If your domain is registered with Cloudflare, then Cloudflare manages the DNS for your domain. To use Cloudflare as your DNS provider, follow the steps below:
 
-1. **Insert a DNS Record**. In your Cloudflare dashboard, create a CNAME record pointing to the alias Netlify provided.
+1. **Insert DNS Records**. In your Cloudflare dashboard, create an A and CNAME record pointing to the alias Netlify provided.
 
-2. **Disable the Cloudflare Proxy**. Make sure the Cloudflare proxy (orange cloud icon) is turned off for the CNAME record, as it needs to be DNS-only (grey cloud icon).
+2. **Disable the Cloudflare Proxy**. Make sure the Cloudflare proxy (orange cloud icon) is turned off for the A and CNAME records, as it needs to be DNS-only (grey cloud icon).
 
 > You must disable the Cloudflare proxy if you want automatic deployments and [permanent redirects](seo.md) to work.
 
@@ -178,9 +178,9 @@ Connect your custom domain, or you can continue using the temporary one.
 
 If your domain is registered with Cloudflare, then Cloudflare manages the DNS for your domain. To use Cloudflare as your DNS provider, follow the steps below:
 
-1. **Insert a DNS Record**. In your Cloudflare dashboard, create a CNAME record pointing to the alias DigitalOcean provided.
+1. **Insert DNS Records**. In your Cloudflare dashboard, create an A and CNAME record pointing to the alias DigitalOcean provided.
 
-2. **Disable the Cloudflare Proxy**. Make sure the Cloudflare proxy (orange cloud icon) is turned off for the CNAME record, as it needs to be DNS-only (grey cloud icon).
+2. **Disable the Cloudflare Proxy**. Make sure the Cloudflare proxy (orange cloud icon) is turned off for the A and CNAME records, as it needs to be DNS-only (grey cloud icon).
 
 > You must disable the Cloudflare proxy if you want automatic deployments and [permanent redirects](seo.md) to work.
 
