@@ -2,7 +2,7 @@
 
 Gutenberg patterns, or "blocks," are pre-built elements that can be added to a page or a post and then customized further.
 
-> The Astro themes support Gutenberg blocks and patterns, but additional styling will be needed for some patterns.
+> The AstroWP themes support Gutenberg blocks and patterns, but additional styling will be needed for some patterns.
 
 Here is a list of supported blocks:
 
